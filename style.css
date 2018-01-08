@@ -98,8 +98,15 @@ ul#drop {
   padding: 0;
   margin: 0;
   height: 100%;
-  width: 1280px;
+  width: 1180px;
   scroll-behavior: smooth;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+html {
+  display: table;
+  margin: auto;
 }
 
 hr {
@@ -141,23 +148,30 @@ p {
 }
 
 #welcome {
-  margin-top: 560px;
-  margin-left: 90px;
 }
 
 #smol {
-  position: absolute;
-  left: 630px;
-  top: 675px;
+  float: left;
   width: 470px;
+  position: relative;
+  left: 625px;
+  top: -70px;
+}
+
+#name {
+  font-size: 56px;
+  margin: 60px 0 0 90px;
 }
 
 #yellow {
-  position: absolute;
-  left: -240px;
-  top: 20px;
-  transform: scale(0.60);
-  z-index: -9;
+  position: relative;
+  top: 50px;
+  left: 90px;
+}
+
+#print {
+  position: relative;
+  top: -30px;
 }
 
 .works {
@@ -245,7 +259,7 @@ p {
 }
 
 #print3 {
-  background: url("images/jotaro.gif") center;
+  background: url("images/open.jpg") center;
   background-size: cover;
   height: 350px;
   width: 490px;
@@ -307,7 +321,7 @@ p {
 }
 
 #film0 {
-  background: url("images/wash.gif") center no-repeat;
+  background: url("images/skate.gif") center no-repeat;
   background-size: cover;
   height: 320px;
   width: 490px;
