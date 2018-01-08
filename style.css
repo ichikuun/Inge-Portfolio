@@ -4,12 +4,21 @@ font: font-style font-variant font-weight font-size/line-height font-family
 */
 
 /* NAVIGATION MENU*/
+#bar {
+  background-color: rgb(10,10,10);
+  opacity: 0.5;
+  width: 100%;
+  height: 77px;
+  position: fixed;
+  top: 0;
+}
+
 #navi {
   animation: bye 8s;
   z-index: 9999;
   position: fixed;
   right: 30px;
-  top: 15px;
+  top: 17px;
   font-family: 'Raleway', sans-serif;
   letter-spacing: 1px;
   cursor: pointer;
@@ -53,33 +62,15 @@ ul#drop {
   line-height: 15px;
 }
 
-ul#drop2 {
-  position: absolute;
-  right: 185px;
-  visibility: hidden;
-  opacity: 0;
-  transition: color .3s, opacity, .44s, line-height .4s ease-in-out;
-  -moz-transition: color .3s, opacity, .44s, line-height .4s ease-in-out;
-  -webkit-transition: color .3s, opacity, .44s, line-height .4s ease-in-out;
-  width: 70px;
-  height: 100px;
-  padding: 3px 0 0 0;
-  margin: 0;
-  list-style: none;
-  color: rgb(220, 220, 220);
-  line-height: 15px;
-}
-
 #eh:hover #drop {
   visibility: visible;
   opacity: 1;
   line-height: 25px;
 }
 
-#ehe:hover #drop2 {
-  visibility: visible;
-  opacity: 1;
-  line-height: 25px;
+#dropbg {
+  background-color: rgb(10,10,10);
+  opacity: 0.5;
 }
 
 #logo {
@@ -88,7 +79,7 @@ ul#drop2 {
   width: 80px;
   position: fixed;
   left: 38px;
-  top: 20px;
+  top: 15px;
   z-index: 4;
   transition: color .3s;
   -moz-transition: color .3s;
@@ -115,13 +106,16 @@ hr {
   width: 1000px;
   margin-left: 90px;
   margin-top: 20px;
+  border-top: none;
+  border-left: none;
+  border-right: none;
 }
 
 h1 {
   color: rgb(220, 220, 220);
   font-family: 'Raleway', sans-serif;
   letter-spacing: 1px;
-  font-size: 56px;
+  font-size: 30pt;
 }
 
 a {
@@ -166,7 +160,7 @@ p {
   z-index: -9;
 }
 
-#works {
+.works {
   margin-left: 90px;
   margin-top: 100px;
   margin-bottom: -30px;
@@ -176,106 +170,246 @@ p {
 .box1 {
   float: left;
   background-color: black;
-  transition: opacity 0.25s;
-  -webkit-transition: opacity 0.25s;
+  display: flex;
+  align-items: center;
+  transition: all ease 0.3s;
+  -webkit-transition: all ease 0.3s;
+}
+/*
+.box1:hover {
+  outline: 12px solid #de6318;
+  outline-offset: -12px;
+  opacity: 0.1;
+} */
+
+.bg {
+  background-color: rgb(10,10,10);
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  z-index: 1;
+  transition: all ease 0.3s;
+  -webkit-transition: all ease 0.3s;
 }
 
-.box1:hover {
-  /*outline: 12px solid #de6318;
-  outline-offset: -12px;*/
-  opacity: 0.1;
+.box2 {
+  opacity: 0;
+  position: absolute;
+  z-index: 2;
+  font-size: 21pt;
+  line-height: 21pt;
+  width: 490px;
+  text-align: center;
+  transition: all ease 0.3s;
+  -webkit-transition: all ease 0.3s;
+}
+
+.box2:hover {
+  color: #ffbd4d;
+}
+
+.italia {
+  font-size: 12pt;
+  font-style: italic;
+  font-weight: 300;
+  transition-delay: 0s;
+  transition: color ease 0.3s;
+  -webkit-transition: color ease 0.3s;
+}
+
+.box1:hover > .bg {
+  opacity: 0.9;
+}
+
+.box1:hover > .box2 {
+  opacity: 1;
 }
 
 #print1 {
   background: url("images/edge.png") top;
-  background-size: 100%;
+  background-size: cover;
   width: 490px;
   height: 690px;
   margin-left: 90px;
   margin-top: 20px;
+  margin-bottom: 50px;
 }
 
 #print2 {
   background: url("images/cover.jpg") no-repeat;
-  background-size: 100%;
+  background-size: cover;
   width: 490px;
   height: 320px;
   margin-left: 20px;
   margin-top: 20px;
 }
 
-#web1 {
+#print3 {
   background: url("images/jotaro.gif") center;
-  background-size: 130%;
-  height: 360px;
+  background-size: cover;
+  height: 350px;
   width: 490px;
   margin-left: 20px;
   margin-top: 20px;
+  margin-bottom: 50px;
 }
 
-#web2 {
+#print3:hover > #printy2 {
+  opacity: 1;
+}
+
+#web1 {
   background: url("images/site.jpg") center;
   background-size: cover;
   height: 360px;
   width: 490px;
   margin-left: 90px;
-  margin-top: 13px;
+  margin-top: 20px;
   margin-bottom: 0;
 }
 
-#film1 {
-  background: url("images/proposal.jpg") center no-repeat;
-  background-size: 100%;
+#web2 {
+  background: url("images/jotaro.gif") center;
+  background-size: cover;
   height: 360px;
   width: 490px;
   margin-left: 20px;
   margin-top: 20px;
 }
 
-#film2 {
-  background: url("images/step.gif") center no-repeat;
-  background-size: 120%;
+#web3 {
+  background: url("images/proposal.jpg") center no-repeat;
+  background-size: cover;
   height: 360px;
   width: 490px;
   margin-left: 90px;
-  margin-top: 0px;
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+
+#web4 {
+  background: url("images/proposal.jpg") center no-repeat;
+  background-size: cover;
+  height: 360px;
+  width: 490px;
+  margin-left: 20px;
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+
+#film {
+  background: url("images/fava.gif") center no-repeat;
+  background-size: cover;
+  height: 320px;
+  width: 490px;
+  margin-left: 90px;
+  margin-top: 20px;
+}
+
+#film0 {
+  background: url("images/wash.gif") center no-repeat;
+  background-size: cover;
+  height: 320px;
+  width: 490px;
+  margin-left: 20px;
+  margin-top: 20px;
+}
+
+#film1 {
+  background: url("images/step.gif") center no-repeat;
+  background-size: cover;
+  height: 320px;
+  width: 490px;
+  margin-left: 90px;
+  margin-top: 20px;
+}
+
+#film2 {
+  background: url("images/wash.gif") center no-repeat;
+  background-size: cover;
+  height: 320px;
+  width: 490px;
+  margin-left: 20px;
+  margin-top: 20px;
 }
 
 #film3 {
-  background: url("images/wash.gif") center no-repeat;
-  background-size: 120%;
-  height: 360px;
+  background: url("images/bus.gif") center no-repeat;
+  background-size: cover;
+  height: 320px;
   width: 490px;
-  margin-left: 20px;
-  margin-top: 0px;
+  margin-left: 90px;
+  margin-top: 20px;
 }
 
 #film4 {
-  background: url("images/bus.gif") center no-repeat;
-  background-size: 120%;
-  height: 300px;
+  background: url("images/pray.gif") center no-repeat;
+  background-size: cover;
+  height: 320px;
   width: 490px;
-  margin-left: 90px;
-  margin-top: 5px;
+  margin-left: 20px;
+  margin-top: 20px;
 }
 
 #film5 {
-  background: url("images/pray.gif") center no-repeat;
-  background-size: 120%;
-  height: 300px;
-  width: 490px;
-  margin-left: 20px;
-  margin-top: 5px;
-}
-
-#film6 {
   background: url("images/pano.jpg") center no-repeat;
   background-size: 130%;
   height: 340px;
   width: 1000px;
   margin-left: 90px;
   margin-top: 20px;
+  margin-bottom: 50px;
+}
+
+hr#contactnow {
+  margin-bottom: 0;
+}
+
+#contactme {
+  float: left;
+  height: 300px;
+  width: 1000px;
+  margin-left: 90px;
+  margin-top: 100px;
   margin-bottom: 75px;
+  border: 1px solid rgb(220,220,200);
+}
+
+h1#contactext {
+  font-size: 32pt;
+  text-align: center;
+  margin-top: 50px;
+}
+
+p#contacttext {
+  text-align: center;
+  font-size: 14pt;
+  font-weight: 300;
+}
+
+#contabutton {
+  background: none;
+  border: 1px solid rgb(220,220,200);
+  color: rgb(220, 220, 220);
+  font-family: 'Raleway', sans-serif;
+  font-size: 10pt;
+  text-align: center;
+  letter-spacing: 1px;
+  padding: 10px 20px 10px 20px;
+  margin-top: 20px;
+  transition: all ease 0.3s;
+}
+
+#contabutton:hover {
+  background: rgb(220,220,220);
+  color: rgb(10,10,10);
+  cursor: pointer;
+}
+
+#contacttext > a {
+  text-decoration: underline;
+  color: #ffbd4d;
+  cursor: pointer;
 }
 
 footer {
