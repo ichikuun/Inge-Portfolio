@@ -11,6 +11,7 @@ font: font-style font-variant font-weight font-size/line-height font-family
   height: 77px;
   position: fixed;
   top: 0;
+  z-index: 2;
 }
 
 #navi {
@@ -167,6 +168,7 @@ p {
   position: relative;
   top: 50px;
   left: 90px;
+  z-index: 1;
 }
 
 #print {
