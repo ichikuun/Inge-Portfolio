@@ -405,13 +405,47 @@ p.descr {
 }
 
 .picwrap {
-  z-index: 1;
-  margin: 0 0 0 90px;
+  margin: 0;
   padding: 0;
+  height: auto;
+  width: 490px;
+}
+
+.imgwrap {
+  display: table;
+  float: left;
+  height: auto;
+}
+
+.picwrap1 {
+  padding: 0;
+  margin: 0;
+  height: auto;
+  width: 420px;
+  display: table-cell;
+}
+
+.picwrap2 {
+  padding: 20px 0 0 20px;
+  margin: 0;
+  height: auto;
+  width: 560px;
+  display: table-cell;
 }
 
 .pic {
-  padding-top: 20px;
+  padding: 20px 0 0 90px;
+}
+
+p.caption {
+  color: rgb(220, 220, 220);
+  font-family: 'Raleway', sans-serif;
+  letter-spacing: 1px;
+  font-size: 12px;
+  font-weight: 300;
+  font-style: italic;
+  padding: 0 0 0 90px;
+  margin: 0;
 }
 
 hr#contactnow {
