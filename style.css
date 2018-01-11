@@ -376,7 +376,7 @@ p {
 /*END OF INDEX*/
 
 
-/*OPEN HOUSE*/
+/*NORMAL WORKS TEMPLATE*/
 
 .headerwrap {
   width: 1000px;
@@ -412,26 +412,28 @@ p.descr {
   display: table;
   float: left;
   height: auto;
+  padding: 0 0 0 90px;
 }
 
 .picwrap1 {
   padding: 0;
   margin: 0;
   height: auto;
-  width: 420px;
+  width: 490px;
   display: table-cell;
 }
 
 .picwrap2 {
-  padding: 20px 0 0 20px;
+  padding-left: 20px !important;
+  padding-top: 0px;
   margin: 0;
   height: auto;
-  width: 560px;
+  width: 490px;
   display: table-cell;
 }
 
 .pic {
-  padding: 20px 0 0 90px;
+  padding: 20px 0 0 0;
 }
 
 p.caption {
@@ -441,9 +443,108 @@ p.caption {
   font-size: 12px;
   font-weight: 300;
   font-style: italic;
-  padding: 0 0 0 90px;
+  padding: 0;
   margin: 0;
 }
+
+p.caption {
+  color: rgb(220, 220, 220);
+  font-family: 'Raleway', sans-serif;
+  letter-spacing: 1px;
+  font-size: 12px;
+  font-weight: 300;
+  font-style: italic;
+  padding-top: 2px;
+  margin: 0;
+}
+
+/*VIDEO WORKS TEMPLATE*/
+.video {
+  width: 1000px;
+  height: 560px;
+  margin: 30px 0 0 90px;
+}
+
+/*SLIDESHOW TEMPLATE*/
+
+.carousel {
+  width: 100% !important;
+  max-height: 530px !important;
+}
+
+.carousel-inner > .item > img, .carousel-inner > .item > a > img {
+  width: 100%;
+  margin: 0;
+  }
+
+.carousel-caption {
+}
+
+.carousel-caption1 {
+}
+
+.carousel-caption:hover {
+}
+
+.carousel-caption1:hover {
+}
+
+.carousel-control.left, .carousel-control.right {
+  background: none !important;
+  transition: all ease 0.3s;
+}
+
+#left-arrow, #right-arrow {
+  height: 6% !important;
+  position: absolute;
+  top: 47%;
+  transition: all ease 0.3s;
+}
+
+#left-arrow {
+  transform: rotate(180deg);
+  left: 15%;
+}
+
+#right-arrow {
+  right: 15%;
+}
+
+.carousel-control.left:hover, .carousel-control.left:active, .carousel-control.left:focus {
+  opacity: 1 !important;
+}
+
+.carousel-control.left:hover > #left-arrow {
+  transform: rotate(180deg) scale(1.2);
+}
+
+.carousel-control.right:hover, .carousel-control.right:active, .carousel-control.right:focus  {
+  opacity: 1 !important;
+}
+
+.carousel-control.right:hover > #right-arrow {
+  transform: scale(1.2);
+}
+
+.slider {
+  border-style: none !important;
+  background-color: white !important;
+  opacity: 0.6;
+  transition: all ease 0.3s;
+  margin-left: 10px !important;
+  transform: scale(0.9);
+}
+
+.slider:hover {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.item {
+  height: 530px;
+}
+
+
 
 hr#contactnow {
   margin-bottom: 0;
