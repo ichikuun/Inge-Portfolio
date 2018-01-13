@@ -420,7 +420,8 @@ p.descr {
   margin: 0;
   height: auto;
   width: 490px;
-  display: table-cell;
+  display: table-cell !important;
+  vertical-align: top;
 }
 
 .picwrap2 {
@@ -429,22 +430,12 @@ p.descr {
   margin: 0;
   height: auto;
   width: 490px;
-  display: table-cell;
+  display: table-cell !important;
+  vertical-align: top;
 }
 
 .pic {
   padding: 20px 0 0 0;
-}
-
-p.caption {
-  color: rgb(220, 220, 220);
-  font-family: 'Raleway', sans-serif;
-  letter-spacing: 1px;
-  font-size: 12px;
-  font-weight: 300;
-  font-style: italic;
-  padding: 0;
-  margin: 0;
 }
 
 p.caption {
@@ -598,8 +589,7 @@ p#contacttext {
 }
 
 footer {
-  margin: 20px;
-  margin-left: 90px;
+  margin: 20px 20px 20px 90px;
 }
 
 #footerlogo {
