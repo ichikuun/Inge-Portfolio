@@ -20,4 +20,5 @@ Playground Panorama // YT 360 plugin needed
 INDEX WORK:
 
 Improve contact pages // add Instagram widget
+
 Photography page // add one
