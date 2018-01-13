@@ -4,8 +4,6 @@ This is Inge's portfolio, consisting of works of design, photography, videograph
 
 Incomplete Pages:
 
-Resume // missing
-
 The Shot // work in progress photos
 
 Edge Mag // turn.js needed
@@ -21,4 +19,6 @@ Playground Panorama // YT 360 plugin needed
 
 INDEX WORK:
 
-Improve contact pages
+Improve contact pages // add Instagram widget
+
+Photography page // add one
