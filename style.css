@@ -13,9 +13,6 @@ font: font-style font-variant font-weight font-size/line-height font-family
   position: fixed;
   top: 0;
 }
-#eh:hover ~ #bar {
-  height: 100px;
-}
 
 #navi {
   position: fixed;
@@ -49,7 +46,6 @@ li:hover, li:active {
 
 ul#drop {
   position: absolute;
-  right: 95px;
   visibility: hidden;
   z-index: 4;
   opacity: 0;
@@ -399,6 +395,7 @@ p.descr {
   float: left;
   margin: 0;
   padding: 20px 0 0 0;
+  line-height: 16px;
 }
 
 .picwrap {
@@ -447,6 +444,18 @@ p.caption {
   font-style: italic;
   padding-top: 2px;
   margin: 0;
+}
+
+p.caption1 {
+  color: rgb(220, 220, 220);
+  font-family: 'Raleway', sans-serif;
+  letter-spacing: 1px;
+  font-size: 12px;
+  font-weight: 300;
+  font-style: none;
+  padding-top: 0px;
+  margin: 0;
+  line-height: 20px;
 }
 
 /*VIDEO WORKS TEMPLATE*/
@@ -536,6 +545,41 @@ p.caption {
 }
 
 
+/* RESUME */
+
+h2 {
+  color: rgb(220, 220, 220);
+  font-family: 'Raleway', sans-serif;
+  font-size: 12px;
+  text-transform: uppercase;
+  text-align: left;
+  letter-spacing: 2px;
+  margin: 20px 0 0 0;
+  padding: 0;
+}
+
+ul.bullets {
+  padding-top: 5px;
+}
+
+ul.bullets > li {
+  list-style-type: disc;
+  display: list-item;
+  color: rgb(220, 220, 220);
+  font-family: 'Raleway', sans-serif;
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: 300;
+}
+
+ul.bullets > li, ul.bullets > li:active {
+  color: inherit;
+}
+
+
+
+
+/* CONTACT */
 
 hr#contactnow {
   margin-bottom: 0;
