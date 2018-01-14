@@ -6,8 +6,6 @@ Incomplete Pages:
 
 Edge Mag // turn.js needed
 
-GTIS Pitch // slideshow of slides
-
 Playground Panorama // YT 360 plugin needed
 
 
