@@ -4,13 +4,7 @@ This is Inge's portfolio, consisting of works of design, photography, videograph
 
 Incomplete Pages:
 
-The Shot // work in progress photos
-
 Edge Mag // turn.js needed
-
-ZOOM Park Website // iframe of real website
-
-JoJo Game // iframe of game
 
 GTIS Pitch // slideshow of slides
 
@@ -22,3 +16,12 @@ INDEX WORK:
 Improve contact pages // add Instagram widget
 
 Photography page // add one
+
+
+IMPROV WORK:
+
+ALL // add programs used in every page
+
+Zoom park // code snippet
+
+Jojo // code snippet
