@@ -1,0 +1,166 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+<title>Home: Zoom Park Singapore</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="shortcut icon" href="images/favicon.ico">
+  <meta charset="UTF-8">
+  <meta name="description" content="trampoline park in Singapore">
+  <meta name="keywords" content="trampoline, park, fun, family">
+  <meta name="author" content="athena media group">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body id="index">
+
+<!-- NAVIGATION -->
+  <div id="navi">
+  <ul>
+  <li>MENU
+    <ul>
+      <li><a href="park.html">Our Park</a>
+        <ul class="sub">
+          <li><a href="park.html#about">About Us</a></li>
+          <li><a href="park.html#price">Admission Prices</a></li>
+          <li><a href="park.html#safety">Safety</a></li>
+          <li><a href="park.html#faq">FAQs</a></li>
+        </ul>
+      <li><a href="attractions.html">Attractions</a></li>
+      <li><a href="programs.html">Programs</a>
+        <ul class="sub">
+          <li><a href="programs.html#jump">Jump Acrobat</a></li>
+          <li><a href="programs.html#kids">Zoom Kids</a></li>
+          <li><a href="programs.html#night">Zoom Night</a></li>
+          <li><a href="programs.html#baby">Baby Bounce</a></li>
+          <li><a href="programs.html#fitness">Fitness Classes</a></li>
+        </ul>
+      <li><a href="event.html">Events</a>
+        <ul class="sub">
+          <li><a href="event.html#birthday">Birthday Parties</a></li>
+          <li><a href="event.html#school">School Events</a></li>
+          <li><a href="event.html#corporate">Corporate Events</a></li>
+        </ul>
+      <li><a href="contact.html">Contact Us</a></li>
+      <li><a href="waiver.html">Waiver</a></li>
+      <li><a href="book.html">Book Now</a></li>
+    </ul>
+  </ul>
+
+    <a href="index.html"><img id="logo" src="images/logo.png">
+
+  </div>
+<!-- NAVIGATION -->
+
+<!-- BACKGROUND -->
+  <div id="carousel" class="carousel slide" data-ride="carousel">
+
+    <!-- DOTDOT THING -->
+    <ol class="carousel-indicators">
+      <li class="slider" data-target="#carousel" data-slide-to="0" class="active"></li>
+      <li class="slider" data-target="#carousel" data-slide-to="1"></li>
+      <li class="slider" data-target="#carousel" data-slide-to="2"></li>
+    </ol>
+
+    <!-- SLIDES -->
+    <div class="carousel-inner" role="listbox">
+
+      <div class="item active">
+        <img src="images/slideshow/classeshome.jpg" alt="Join classes now!">
+        <div class="caption">
+          <button class="carousel-caption">Register now!</button>
+        </div>
+      </div>
+
+      <div class="item">
+        <img src="images/slideshow/cnyhome.jpg" alt="Chinese New Year Promo">
+      </div>
+
+      <div class="item">
+        <img src="images/slideshow/students.jpg" alt="Discount for Students">
+        <div class="caption">
+          <button class="carousel-caption1" href="book.html">Book now!</button>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- CONTROLS -->
+    <a class="left carousel-control" href="#carousel" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#carousel" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+
+</div>
+<!-- BACKGROUND -->
+
+<!-- WELCOME -->
+<div id="welcome"><h1>Welcome to Zoom Park,<br>the <strong><em>biggest</em></strong> trampoline park in Singapore!</h1>
+</div>
+<!-- WELCOME -->
+
+<!-- BACK TO TOP -->
+  <a href="#" class="scrollup">BACK TO TOP</a>
+<!-- BACK TO TOP -->
+
+</body>
+
+<!-- FOOTER -->
+<footer id="index">
+<div id="footsie">
+  <p id="irritating">What are you waiting for?</p>
+<button id="footsienow"><a href="book.html">Book now!</a></button>
+</div>
+
+<div id="footer">
+
+  <p id="toe1"><b>Zoom Park Singapore</b><br>Phone: 6334 4615<br>Info enquiry: info@zoomparkasia.com
+    <br>Events enquiry: events@zoomparkasia.com
+    <br>Media and PR: pr@zoomparkasia.com<br>-
+    <br>All Rights Reserved.<br>© 2017 Zoom Park Ltd<br>Careers<br>Terms and Conditions<br>Privacy Policy<br><a href="https://ichikuun.github.io">Website by Athena</a></p>
+
+  <p id="toe2">200 Pandan Gardens<br>#01-14, Singapore 609336<br>-
+  <br>Mondays: 3pm to 7pm
+  <br>Thursday to Friday: 10am to 7pm
+  <br>Weekends and Public Holidays: Closed<br><br>
+  <img src="images/icons/tw1.png" href="#"; class="icon" alt="twitter">
+  <img src="images/icons/fb1.png" href="#"; class="icon" alt="facebook">
+  <img src="images/icons/yt1.png" href="#"; class="icon" alt="youtube">
+  <img src="images/icons/insta.svg" href="#"; class="icon" alt="instagram">
+  </p>
+
+</div>
+</footer>
+<!-- FOOTER -->
+
+  <script>
+$(document).ready(function () {
+$('.scrollup').hide();
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 100) {
+            $('.scrollup').fadeIn();
+        } else {
+            $('.scrollup').fadeOut();
+        }
+    });
+
+    $('.scrollup').click(function () {
+        $("html, body").animate({
+            scrollTop: 0
+        }, 600);
+        return false;
+    });
+
+});
+
+  </script>
+
+</html>

@@ -1,0 +1,806 @@
+/* NOTES
+margin: top right bottom left
+*/
+
+/* BACKGROUND */
+.carousel {
+  position: absolute;
+  left: 0;
+  width: 1280px;
+  height: 720px;
+  animation: wow 8s;
+}
+
+.carousel-inner > .item > img,
+
+.carousel-inner > .item > a > img {
+  width: 1280px;
+  height: 720px;
+  margin: 0;
+  }
+
+.carousel-caption {
+  display: list-item;
+  background-color: #3d3d3d;
+  border-radius: 10px;
+  color: white;
+  padding: 10px 30px;
+  position: relative;
+  left: 568px;
+  bottom: 200px;
+  border: none;
+  opacity: 0.95;
+  font-family: 'Nunito', sans-serif;
+}
+
+.carousel-caption1 {
+  display: list-item;
+  background-color: #3d3d3d;
+  border-radius: 10px;
+  color: white;
+  padding: 10px 30px;
+  position: relative;
+  left: 575px;
+  bottom: 180px;
+  border: none;
+  opacity: 0.95;
+  font-family: 'Nunito', sans-serif;
+}
+
+.carousel-caption:hover {
+  background: yellow;
+  color: black;
+  opacity: 1;
+  text-shadow: none;
+  font-weight: bold;
+}
+
+.carousel-caption1:hover {
+  background: yellow;
+  color: black;
+  opacity: 1;
+  text-shadow: none;
+  font-weight: bold;
+}
+
+.slider:hover {
+  background-color: yellow;
+}
+/* BACKGROUND */
+
+/* NAVIGATION MENU*/
+#navi {
+  animation: ohthere 5s;
+  opacity: 1;
+  z-index: 9999;
+}
+
+#logo {
+  display: inline;
+  height: 80px;
+  width: auto;
+  position: fixed;
+  right: 23px;
+  top: 15px;
+  opacity: 0.95;
+  z-index: 4;
+  font-family: 'Nunito', sans-serif;
+}
+
+#logo:hover {
+  opacity: 1;
+  animation: shake 0.72s cubic-bezier(.36,.07,.19,.97) both;
+  transform: translateY(0);
+  backface-visibility: hidden;
+  perspective: 1000px;
+}
+
+a {
+  color: inherit;
+  font-family: 'Nunito', sans-serif;
+}
+
+a:hover {
+  color: inherit;
+}
+
+ul {
+  display: inline;
+  list-style-type: none;
+  position: fixed;;
+  left: 0px;
+  opacity: 0.95;
+  z-index: 4;
+  font-family: 'Nunito', sans-serif;
+}
+
+ul li {
+  font: bold 12px sans-serif;
+  display: inline-block;
+  margin-right: -4px;
+  position: relative;
+  top: 20px;
+  padding: 15px 20px;
+  background: #3d3d3d;
+  color: white;
+  cursor: pointer;
+  opacity: 0.95;
+  z-index: 4;
+  font-family: 'Nunito', sans-serif;
+}
+
+div#navii {
+  position: fixed;
+  top: 0px;
+  z-index: 999;
+}
+
+ul li:hover {
+  background: #3d3d3d;
+  color: white;
+  opacity: 1;
+  z-index: 4;
+  font-weight: bold;
+}
+
+ul li ul {
+  visibility: hidden;
+  position: absolute;
+  padding: 0;
+  width: 150px;
+  top: 25px;
+  left: 0;
+  opacity: 0;
+  z-index: 3;
+  transition: all 0.3s ease-in-out 0s, visibility 0s linear 0.3s, z-index 0s linear 0.01s;
+}
+
+ul li ul li {
+  background: #3d3d3d;
+  display: block;
+  color: white;
+  opacity: 0.95;
+  z-index: 4;
+}
+
+ul li ul li:hover {
+  background: yellow;
+  color: black;
+  opacity: 1;
+  z-index: 4;
+  font-weight: bold;
+  transition-delay: 0s, 0s, 0.3s;
+}
+
+ul li:hover > ul {
+  visibility: visible;
+  opacity: 1;
+  z-index: 4;
+  font-weight: bold;
+  transition-delay: 0s, 0s, 0.3s;
+}
+
+ul.sub {
+  top: 0;
+  left: 154px;
+  visibility: hidden;
+  opacity: 0;
+  z-index: 4;
+  top: -20px;
+}
+
+/* NAVIGATION */
+
+/* BACKGROUND FOR SLIDESHOW */
+#bgbg {
+  height: 720px;
+  width: 1280px;
+  position: absolute;
+  top: 0px;
+  left: 0;
+  margin-top: 0;
+  z-index: -1;
+  font-family: 'Nunito', sans-serif;
+}
+/* BACKGROUND FOR SLIDESHOW */
+
+/* GENERAL */
+/*stroke my*/ body {
+  max-width: 1280px;
+}
+
+p {
+  color: white;
+  font-family: 'Nunito', sans-serif;
+}
+
+#welcome {
+  text-align: center;
+  padding-top: 250px;
+  color: black;
+  font-family: 'Nunito', sans-serif;
+  animation: bye 8s;
+}
+
+#border {
+    color: white;
+    border-color: white;
+    border-radius: 5px;
+    border-width: medium;
+    border-style: solid;
+}
+
+html {
+    overflow: scroll;
+    overflow-x: hidden;
+}
+::-webkit-scrollbar {
+    width: 0px;  /* remove scrollbar space */
+    background: transparent;  /* optional: just make scrollbar invisible */
+}
+/* optional: show position indicator in red */
+::-webkit-scrollbar-thumb {
+    background: #FF0000;
+}
+
+/* BACK TO TOP SCROLLER */
+.scrollup {
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    z-index: 4;
+    padding: 7px;
+    color: white;
+    border-color: white;
+    border-radius: 5px;
+    border-width: medium;
+    border-style: solid;
+}
+
+.scrollup:hover {
+  color: yellow;
+  border-color: yellow;
+  text-decoration: none;
+}
+/* GENERAL */
+
+/* FOOTER */
+footer {
+  color: white;
+  width: 1280px;
+  height: 400px;
+  position: absolute;
+  top: 720px;
+  font-family: 'Nunito', sans-serif;
+  animation: wow 8s;
+}
+
+#footsie {
+  padding: 70px;
+  height: auto;
+  text-align: center;
+  background: #3d3d3d; /* Old browsers */
+  background: -moz-linear-gradient(top,  #3d3d3d 0%, #808080 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top,  #3d3d3d 0%,#808080 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom,  #3d3d3d 0%,#808080 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3d3d3d', endColorstr='#808080',GradientType=0 ); /* IE6-9 */
+}
+
+#irritating {
+  font-size: 1.8em;
+}
+
+#footsienow {
+  background-color: Transparent;
+  border-color: white;
+  border-radius: 10px;
+  border-width: medium;
+  border-style: solid;
+  color: white;
+  padding: 8px 30px;
+  font-family: 'Nunito', sans-serif;
+  font-weight: bold;
+  text-shadow: none;
+}
+
+#footsienow:hover {
+  border-color: yellow;
+  color: yellow;
+}
+
+#footer {
+  padding: 20px 20px 40px 20px;
+  background-color: gray;
+}
+
+#toe1 {
+  margin: 20px 280px;
+}
+
+#toe2 {
+  margin: 0px 30px;
+  position: absolute;
+  right: 280px;
+  bottom: -70px;
+}
+
+.icon {
+  height: 25px;
+  float: left;
+  margin: 8px;
+}
+
+.icon:hover,
+.icon:visited {
+  animation: shake 1s;
+}
+
+/* FOOTER */
+
+/* PARK CONTENT */
+body#park {
+  max-width: 1280px;
+  background-color: black;
+  color: white;
+  margin: 20px;
+  font-family: 'Nunito', sans-serif;
+}
+
+h1#h1park {
+  text-align: center;
+  padding-top: 100px;
+  color: white;
+}
+
+#about {
+  float: right;
+  margin-left: 50px;
+  margin-bottom: 0px;
+  padding-top: 7px;
+  padding-left: 70px;
+  padding-right: 70px;
+  font-size: 1.2em;
+}
+
+#prices {
+  margin-left: 0px;
+  margin-top: 0!important;
+  padding-top: 0!important;
+  padding-bottom: 130px;
+  padding-left: 110px;
+  padding-right: 700px;
+  font-size: 1.2em;
+}
+
+#safety {
+  margin-left: 53px;
+  margin-bottom: 130px;
+  padding-top: 5px;
+  padding-left: 70px;
+  padding-right: 70px;
+  font-size: 1.2em;
+}
+
+
+#faq {
+  margin-left: 0px;
+  padding-bottom: 200px;
+  padding-left: 110px;
+  padding-right: 700px;
+  padding-top: 5px;
+  font-size: 1.2em;
+}
+
+.container1 {
+  margin-left: 352px;
+  margin-right: 110px;
+  margin-top: 5px;
+}
+
+img#ourpark {
+  float: left;
+  margin-top: 10px;
+  width: 330px;
+  position: absolute;
+  top: 232px;
+}
+
+caption {
+  font-size: 1.2em;
+  font-family: 'Nunito', sans-serif;
+}
+
+table.table {
+  width: 600px;
+  height: auto;
+  border: 1px solid white;
+  margin-top: 20px;
+  color: white;
+  font-family: 'Nunito', sans-serif;
+}
+
+th, td {
+  padding: 10px;
+  border: 1px solid white;
+  color: white;
+  font-family: 'Nunito', sans-serif;
+}
+
+img#ourpark1 {
+  width: 330px;
+  float: left;
+  margin-top: 5px;
+  height: 380;
+}
+
+footer#park {
+  position: absolute;
+  top: 3000px;
+  left: 0;
+  animation: none;
+}
+/* PARK CONTENT */
+
+
+/* ATTRACTIONS CONTENT */
+
+.mappics:hover {
+  opacity: 0;
+}
+
+/* HOVERABLES */
+
+#map3 {
+  background-image: url(images/map/3a.png);
+  height: 108px;
+  width: 118px;
+  margin-top: -108px;
+  margin-left: 139px;
+}
+
+#map6 {
+  background-image: url(images/map/6a.png);
+  height: 213px;
+  width: 98px;
+  margin-top: -213px;
+  margin-left: 108px;
+}
+
+#map8 {
+  background-image: url(images/map/8a.png);
+  height: 111px;
+  width: 161px;
+  margin-top: -1px;
+  margin-left: 333px;
+}
+
+#map11 {
+  background-image: url(images/map/11a.png);
+  height: 164px;
+  width: 113px;
+  margin-top: -164px;
+  margin-left: 94px;
+}
+
+#map12 {
+  background-image: url(images/map/12a.png);
+  height: 164px;
+  width: 127px;
+  margin-top: -164px;
+  margin-left: 207px;
+}
+
+#map13 {
+  background-image: url(images/map/13a.png);
+  height: 164px;
+  width: 161px;
+  margin-top: -164px;
+  margin-left: 334px;
+}
+
+footer#attractions {
+  position: absolute;
+  top: 1150px;
+  left: 0;
+  animation: none;
+}
+
+/* NON-HOVERABLES */
+
+#map1 {}
+
+#map2 {
+  margin-top: -20px;
+}
+
+#map4 {
+  margin-top: -108px;
+  margin-left: 256px;
+}
+
+#map5 {
+  margin-top: -20px;
+}
+
+#map7 {
+  margin-top: -213px;
+  margin-left: 206px;
+}
+
+#map76 {
+  margin-top: -213px;
+  margin-left: 333px;
+}
+
+#map9 {
+  margin-top: -213px;
+  margin-left: 492px;
+}
+
+#map10 {
+  margin-top: -21px;
+}
+
+#map14 {
+  margin-top: -165px;
+  margin-left: 492px;
+}
+
+#map15 {
+  margin-top: -23px;
+}
+
+/* ATTRACIONS CONTENT */
+
+
+/* PROGRAMS CONTENT */
+body#programs, body#event {
+  background-color: black;
+}
+
+#.container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+section.module:last-child {
+  margin-bottom: 0;
+}
+section.module h2 {
+  margin-bottom: 40px;
+  font-family: 'Nunito', sans-serif;
+  font-size: 30px;
+}
+section.module p {
+  margin-bottom: 40px;
+  font-size: 16px;
+  font-weight: 300;
+  width: 900px;
+}
+section.module p:last-child {
+  margin-bottom: 0;
+}
+section.module.content {
+  padding: 90px 0;
+}
+section.module.parallax {
+  padding: 240px 0;
+  background-position: 0 0;
+}
+.h2programs {
+  font-size: 48px;
+  line-height: 1;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: black;
+  padding: 20px 30px 20px 30px;
+  margin-top: 30px;
+  color: yellow;
+  font-family: 'Nunito', sans-serif;
+  opacity: 0.85;
+}
+section.module.parallax-1 {
+  background-image: url("images/programmes/jumpacrobat.jpg");
+  background-size: 100% 170%;
+  height: 200px;
+}
+section.module.parallax-2 {
+  background-image: url("images/programmes/kids.jpg");
+  height: 200px;
+}
+section.module.parallax-3 {
+  background-image: url("images/programmes/night.jpg");
+  height: 200px;
+}
+
+section.module.parallax-4 {
+  background-image: url("images/programmes/baby.jpg");
+  height: 200px;
+}
+
+section.module.parallax-5 {
+  background-image: url("images/programmes/fitness.jpg");
+  height: 200px;
+}
+
+@media all and (min-width: 600px) {
+  section.module h2 {
+    font-size: 42px;
+  }
+  section.module p {
+    font-size: 20px;
+    margin: 0 100px 0 100px;
+  }
+  section.module.parallax {
+    padding: 200px 0;
+  }
+  section.module.parallax h1 {
+    font-size: 96px;
+  }
+}
+@media all and (min-width: 960px) {
+  section.module.parallax h1 {
+    font-size: 160px;
+  }
+}
+
+footer#programs {
+  position: absolute;
+  top: 5600px;
+  left: 0;
+  animation: none;
+}
+
+/* PROGRAMS CONTENT */
+
+
+/* EVENTS CONTENT */
+
+section.module.parallax-6 {
+  background-image: url("images/events/birthday.jpg");
+  height: 200px;
+}
+
+section.module.parallax-7 {
+  background-image: url("images/events/school.jpg");
+  height: 200px;
+}
+
+section.module.parallax-8 {
+  background-image: url("images/events/corporate.jpg");
+  height: 200px;
+}
+
+footer#event {
+  position: absolute;
+  top: 3700px;
+  left: 0;
+  animation: none;
+}
+
+/* EVENTS CONTENT */
+
+
+/* WAIVER CONTENT */
+
+footer#waiver {
+  position: absolute;
+  top: 1400px;
+  left: 0;
+  animation: none;
+}
+
+/* WAIVER CONTENT */
+
+
+/* BOOK CONTENT */
+
+form {
+  color: white;
+  font-family: 'Nunito', sans-serif;
+}
+
+input {
+  color: black;
+  font-family: 'Nunito', sans-serif;
+}
+
+footer#book {
+  position: absolute;
+  top: 1350px;
+  left: 0;
+  animation: none;
+}
+
+/* BOOK CONTENT */
+
+
+/* CONTACT CONTENT */
+body#contact {
+  max-width: 1280px;
+  margin: 0px 70px 0px 70px;
+  background-color: black;
+}
+
+#contactus {
+  margin-left: 80px;
+}
+
+#h1contact {
+  text-align: center;
+  padding-top: 100px;
+  padding-bottom: 90px;
+  color: white;
+  font-family: 'Nunito', sans-serif;
+}
+
+.h2contact {
+  color: yellow;
+  font-family: 'Nunito', sans-serif;
+  padding-top: 50px;
+}
+
+button.bus {
+  padding: 2px 8px 2px 8px;
+  margin-right: 20px;
+  background-color: yellow;
+  border: yellow;
+  color: black;
+  border-radius: 5px;
+  font-family: 'Nunito', sans-serif;
+  font-weight: bold;
+}
+
+table.opening1 {
+  color: white;
+  width: 400px;
+  float: left;
+  font-size: 1.2em;
+}
+
+table.opening2 {
+  color: white;
+  width: 400px;
+  float: right;
+  margin-right: 200px;
+  font-size: 1.2em;
+}
+
+footer#contact {
+  position: absolute;
+  top: 2100px;
+  left: 0;
+  animation: none;
+}
+
+/* CONTACT CONTENT */
+
+/* ANIMATION */
+/* for appearing stuff like the carousel and footer */
+@keyframes wow {
+	0% {opacity: 0;}
+	50% {opacity: 0;}
+	100% {opacity: 1;}
+}
+/* for the welcome message */
+@keyframes bye {
+  0% {opacity: 0;}
+  20% {opacity: 1;}
+	40% {opacity: 1;}
+	100% {opacity: 0;}
+}
+/* for menu, an earlier fadein than others */
+@keyframes ohthere {
+  0% {opacity: 0;}
+  40% {opacity: 0;}
+  100% {opacity: 1;}
+}
+
+/* for logo shake */
+@keyframes shake {
+  10%, 90% {transform: translateY(-1px);}
+  20%, 80% {transform: translateY(2px);}
+  30%, 50%, 70% {transform: translateY(-4px);}
+  40%, 60% {transform: translateY(4px);}
+}
+/* ANIMATION */
