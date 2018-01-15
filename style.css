@@ -561,6 +561,13 @@ ul.bullets > li, ul.bullets > li:active {
   color: inherit;
 }
 
+/*PANORAMA*/
+
+iframe#panorama {
+  margin-left: 90px;
+  margin-top: 50px;
+}
+
 
 
 /* CONTACT */
