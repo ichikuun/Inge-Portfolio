@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>page15</title>
+<link href="style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body id="page15">
+
+<img onClick="countClicks()" src="images/background1.jpg" id="stare">
+   
+   <!-- if you think 18 clicks in 2.7s is impossible, keep trying. if I can do it, you can do it. -->
+		<script>
+			var clicks=0; 
+			function countClicks( ){ 
+				clicks++;
+				if(clicks==18){
+					alert("Great job, ORA!");
+					window.location= "page16.html";}
+			}
+			setTimeout(function() {window,location="death.html";}, 2700)
+		</script>
+        
+</body>
+</html>

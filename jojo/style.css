@@ -1,0 +1,391 @@
+@charset "UTF-8";
+/* CSS Document */
+
+#homepage {
+	background-image: url(images/background1.jpg);
+	margin: auto;
+	max-width: 960px;
+	background-repeat: no-repeat;
+}
+
+a {
+	color: white;
+	text-decoration: none;
+}
+
+.jojo {
+	font-size: 36px;
+	font-family: Arial;
+	color: white;
+	text-align: center;
+	position: fixed;
+	top: 20px;
+	left: 250px;
+	text-shadow: 2px 2px #000000;
+}
+
+.clickhere {
+	font-size: 36px;
+	font-family: Arial;
+	color: white;
+	text-align: center;
+	position: fixed;
+	bottom: 40px;
+	left: 480px;
+	animation: blinky 1.2s linear infinite;
+}
+
+#page2 {
+	background-image: url(images/jotaro.png);
+	margin: auto;
+	max-width: 960px;
+	background-repeat: no-repeat;
+}
+
+.jotaro {
+	font-size: 36px;
+	font-family: Arial;
+	color: white;
+	text-align: center;
+	position: fixed;
+	bottom: 50px;
+	left: 200px;
+	animation: jotaro 3s;
+	text-shadow: 2px 2px 2px #000000;
+}
+
+#page3 {
+	background-image: url(images/joseph.png);
+	margin: auto;
+	max-width: 960px;
+	background-repeat: no-repeat;
+}
+
+.joseph {
+	font-size: 36px;
+	font-family: Arial;
+	color: white;
+	text-align: center;
+	position: fixed;
+	bottom: 210px;
+	right: 50px;
+	animation: joseph 3s;
+	text-shadow: 2px 2px 2px #000000;
+}
+
+#page4 {
+	background-image: url(images/night.png);
+	margin: auto;
+	max-width: 960px;
+	background-repeat: no-repeat;
+}
+
+.night {
+	font-size: 36px;
+	font-family: Arial;
+	color: white;
+	text-align: center;
+	position: fixed;
+	bottom: 200px;
+	left: 170px;
+	animation: night 3.5s;
+	text-shadow: 2px 2px 2px #000000;
+}
+
+#page5 {
+	background-image: url(images/night2.png);
+	margin: auto;
+	max-width: 960px;
+	background-repeat: no-repeat;
+}
+
+.dio1 {
+	font-size: 60px;
+	font-family: Arial;
+	color: white;
+	text-align: center;
+	position: fixed;
+	top: 180px;
+	left: 170px;
+	text-shadow: 2px 2px 2px #000000;
+}
+
+#page6 {
+	background-image: url(images/night3.png);
+	margin: auto;
+	max-width: 960px;
+	background-repeat: no-repeat;
+}
+
+.dio2 {
+	font-size: 36px;
+	font-family: Arial;
+	color: white;
+	text-align: center;
+	position: fixed;
+	left: 220px;
+	bottom: 60px;
+	text-shadow: 2px 2px 2px #000000;
+	animation: dio 2.35s linear;
+}
+
+#page7 {
+	background-image: url(images/attack1.png);
+	margin: auto;
+	max-width: 960px;
+	background-repeat: no-repeat;
+}
+
+#page8 {
+	background-image: url(images/attack2.png);
+	margin: auto;
+	max-width: 960px;
+	background-repeat: no-repeat;
+}
+
+.attack {
+	font-size: 36px;
+	font-family: Arial;
+	color: white;
+	text-align: center;
+	position: fixed;
+	left: 190px;
+	bottom: 60px;
+	text-shadow: 2px 2px 2px #000000;
+}
+
+#page9 {
+	background-image: url(images/zawarudo.png);
+	margin: auto;
+	max-width: 960px;
+	background-repeat: no-repeat;
+}
+
+.knives {
+	font-size: 36px;
+	font-family: Arial;
+	color: white;
+	text-align: center;
+	position: fixed;
+	right: 165px;
+	top: 47px;
+	text-shadow: 2px 2px 2px #000000;
+	animation: knives 3s;
+}
+
+#page10 {
+	background-image: url(images/knives.png);
+	margin: auto;
+	max-width: 960px;
+	background-repeat: no-repeat;
+}
+
+#page11 {
+	max-width: 960px;
+	margin: 0;
+}
+
+#page12 {
+	background-image: url(images/hurt.png);
+	margin: auto;
+	max-width: 960px;
+	background-repeat: no-repeat;
+}
+
+.hurt {
+	font-size: 36px;
+	font-family: Arial;
+	color: white;
+	text-align: center;
+	position: fixed;
+	left: 105px;
+	bottom: 70px;
+	text-shadow: 2px 2px 2px #000000;
+	animation: hurt 10s;
+}
+
+#page13 {
+	background-image: url(images/bloodsucking.png);
+	margin: auto;
+	max-width: 960px;
+	background-repeat: no-repeat;
+}
+
+.bloodsucking {
+	font-size: 36px;
+	font-family: Arial;
+	color: white;
+	text-align: center;
+	position: fixed;
+	left: 115px;
+	bottom: 100px;
+	text-shadow: 2px 2px 2px #000000;
+	animation: knives 5s;
+}
+
+#page14 {
+	margin: 0;
+	max-width: 960px;
+	background-repeat: no-repeat;
+}
+
+.roadrolla {
+	font-size: 36px;
+	font-family: Arial;
+	color: white;
+	text-align: center;
+	position: fixed;
+	left: 115px;
+	bottom: 100px;
+	text-shadow: 2px 2px 2px #000000;
+}
+
+#page15 {
+	background-image: url(images/stare.png);
+	margin: auto;
+	max-width: 960px;
+	background-repeat: no-repeat;
+}
+
+#stare {
+	margin: 0;
+	position:fixed;
+	left: 0;
+	top: 0;
+	opacity: 0;
+}
+
+#page16 {
+	background-image: url(images/dio.png);
+	margin: auto;
+	max-width: 960px;
+	background-repeat: no-repeat;
+}
+
+.dio {
+	font-size: 36px;
+	font-family: Arial;
+	color: white;
+	text-align: center;
+	position: fixed;
+	right: 125px;
+	bottom: 230px;
+	text-shadow: 2px 2px 2px #000000;
+	animation: knives 5s;
+}
+
+#end {
+	background-image: url(images/snes.png);
+	margin: auto;
+	max-width: 960px;
+	background-repeat: no-repeat;
+	font-size: 14px;
+	font-family: Arial;
+	color: white;
+	text-align: center;
+	position: fixed;
+	top: 245px;
+	left: 500px;
+	opacity: 0;
+	animation: ending 15s;
+}
+
+#death {
+	margin: 0;
+	padding: 0;
+	float: left;
+	display: inline-table;
+	background-color: #003837;
+}
+
+#death3 {
+	margin: 0;
+	padding: 0;
+	display: inline-table;
+}
+
+#death6 {
+	margin: 0;
+	padding: 0;
+	display: inline-table;
+}
+
+#death3:hover {
+	content: url(images/death3.5.png);
+	animation: gameover 0.9s linear infinite;
+}
+
+#death6:hover {
+	content: url(images/death6.5.png);
+	animation: gameover 0.9s linear infinite;}
+
+.arrow {
+	position: fixed;
+	right: 30px;
+	bottom: 30px;
+}
+
+.arrow2 {
+	position: fixed;
+	right: 30px;
+	bottom: 30px;
+	animation: knives 9s;
+}
+
+#arrow {
+}
+
+#arrow:hover {
+	background-image: url(images/arrow2.png);
+}
+
+@keyframes blinky {
+	50% {opacity: 0;}
+}
+
+@keyframes jotaro {
+	from {left: -900px;}
+	to {left: 200px;}
+}
+
+@keyframes joseph {
+	from {opacity: 0; right: 200px;}
+	to {opacity:1; right: 50px;}
+}
+
+@keyframes night {
+	from {opacity: 0; bottom: 100px;}
+	to {opacity:1; bottom: 200px;}
+}
+
+@keyframes dio {
+	from {bottom: 500px; left: 370px;}
+	to {bottom: 60px; left: 220px;}
+}
+
+@keyframes death {
+	from {opacity: 0;}
+	to {opacity: 1;}
+}
+
+@keyframes knives {
+	0% {opacity: 0;}
+	55% {opacity: 1;}
+	100% {opacity: 1;}
+}
+
+@keyframes hurt {
+	0% {opacity: 0;}
+	25% {opacity: 1;}
+	100% {opacity: 1;}
+}
+
+@keyframes gameover {
+	50% {opacity: 0; background-color: #003837;}
+}
+
+@keyframes ending {
+	0% {opacity: 1;}
+	30% {opacity: 1;}
+	100% {opacity: 0;}
+}
