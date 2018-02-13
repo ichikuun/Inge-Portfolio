@@ -1,0 +1,277 @@
+/* NOTES
+THIS CSS FILE IS FOR THE XR-2 WEBSITE
+COPYRIGHT OF INGE SHI
+VISIT MY WEBSITE AT INGESHI.SPACE
+*/
+
+/* LANDING */
+#logo {
+  height: auto;
+  width: 10vw;
+  margin: 0 45vw 0 45vw;
+  padding-top: 20vh;
+}
+
+#landing {
+  height: 95vh;
+  width: 100vw;
+  background: url(images/sky.jpg) no-repeat center;
+  background-size: cover;
+}
+
+#landingtext {
+  width: 40vw;
+  text-align: center;
+  margin: 5vh 30vw 1vh 30vw;
+  text-transform: uppercase;
+}
+
+#landingbody {
+  width: 50vw;
+  text-align: center;
+  margin: 0 25vw;
+}
+
+#arrows {
+  margin: 20vh 0;
+}
+
+#arrow1, #arrow2, #arrow3 {
+  transform: rotate(90deg);
+  display: block;
+}
+
+#arrow1 {
+  opacity: 0.3;
+  width: 2vw;
+  margin: -1.5vh 49vw;
+  animation: arrowing1 1.5s ease-out 0.2s infinite;
+}
+
+#arrow2 {
+  opacity: 0.5;
+  width: 3vw;
+  margin: -1.5vh 48.5vw;
+  animation: arrowing2 1.5s ease-out 0.1s infinite;
+}
+
+#arrow3 {
+  opacity: 0.6;
+  width: 4vw;
+  margin: -2vh 48vw;
+  animation: arrowing3 1.5s ease-out infinite;
+}
+
+@keyframes arrowing1 {
+  0% {opacity: 0.3}
+  30% {opacity: 0.2}
+}
+
+@keyframes arrowing2 {
+  0% {opacity: 0.5}
+  60% {opacity: 0.2}
+}
+
+@keyframes arrowing3 {
+  0% {opacity: 0.6}
+  80% {opacity: 0.2}
+}
+
+/* LANDING */
+
+
+/* WHO & HOW */
+.box {
+  width: 80vw;
+  height: 40vh;
+  background-size: cover;
+  margin: 10vh 10vw;
+  border-bottom: 5px white;
+}
+
+#who {
+  background: url(images/table.jpg);
+  background-size: cover;
+}
+
+#how {
+  background: url(images/office.jpg);
+  background-size: cover;
+}
+
+.boxbox {
+  background-color: rgba(10, 10, 10, 0.6);
+  height: 33vh;
+  padding: 7vh 0 0 45vw;
+  transition: background 0.3s ease;
+}
+
+.boxbox:hover {
+  background-color: rgba(10, 10, 10, 0.8);
+  border-bottom: 4px solid white;
+}
+
+.divider {
+  width: 50px;
+  height: 3px;
+  margin: 0;
+  padding: 0;
+  background-color: white;
+}
+
+
+.boxtext {
+  width: 25vw;
+}
+/* WHO & HOW */
+
+/* ROLES */
+.role {
+  width: 22.5vw;
+  min-height: 75vh;
+  display: inline;
+  float: left;
+  padding-left: 2.5vw;
+  background: grey;
+  transition: background 0.3s ease;
+}
+
+.role:hover {
+  border-bottom: 4px solid white;
+}
+
+#role1, #role2 {
+  margin-right: 2.5vw;
+}
+
+#role1 {
+  background: url(images/start.jpg);
+  background-size: cover;
+}
+
+#role1:hover {
+  background: url(images/start1.jpg);
+  background-size: cover;
+}
+
+#role2 {
+  background: url(images/resto.jpg);
+  background-size: cover;
+}
+
+#role2:hover {
+  background: url(images/resto1.jpg);
+  background-size: cover;
+}
+
+
+#role3 {
+  background: url(images/sewing.jpg);
+  background-size: cover;
+}
+
+#role3:hover {
+  background: url(images/sewing1.jpg);
+  background-size: cover;
+}
+
+
+.roletext {
+  width: 20vw;
+}
+
+.icon1 svg{
+  width: 10vw;
+  margin: 4vh 7.5vw 1vh 5vw;
+}
+
+.icon2 svg{
+  width: 14vw;
+  margin: 4vh 5.5vw 1vh 3vw;
+}
+
+.icon3 svg{
+  width: 11vw;
+  margin: 4vh 7vw 1vh 4.5vw;
+}
+
+/* ROLES */
+
+/* COFFEE */
+
+.coffeebox {
+  width: 100vw;
+  height: 50vh;
+  background: url(images/coffee.jpg);
+  background-size: cover;
+  margin: 45vh 0vw 0 0;
+}
+
+#phone {
+  height: 45vh;
+  position: absolute;
+  bottom: -240vh;
+  left: 20vw;
+}
+
+.cofbox {
+  background-color: rgba(10, 10, 10, 0.6);
+  height: 50vh;
+  padding: 0 0 0 50vw;
+  margin-bottom: 4px;
+  transition: background 0.3s ease;
+}
+
+.cofbox:hover {
+  background-color: rgba(10, 10, 10, 0.8);
+  border-bottom: 4px solid white;
+}
+
+
+
+/* GENERAL */
+body {
+  background-color: rgb(30, 30, 30);
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+* {
+  scroll-behavior: smooth;
+}
+
+h1 {
+  font-family: 'Libre Franklin', sans-serif;
+  color: white;
+  font-size: 3em;
+  letter-spacing: 1px;
+}
+
+h2 {
+  font-family: 'Libre Franklin', sans-serif;
+  color: white;
+  font-size: 1.5em;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+
+p {
+  font-family: 'Libre Franklin', sans-serif;
+  color: white;
+  font-size: 1em;
+  font-weight: 300;
+}
+
+a {
+  font-family: 'Libre Franklin', sans-serif;
+  color: grey;
+  text-decoration: none;
+  font-style: italic;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: white;
+}
