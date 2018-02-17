@@ -8,7 +8,7 @@ VISIT MY WEBSITE AT INGESHI.SPACE
 #logo {
   height: auto;
   width: 10vw;
-  margin: 0 45vw 0 45vw;
+  margin: 0 45vw;
   padding-top: 20vh;
 }
 
@@ -23,7 +23,7 @@ VISIT MY WEBSITE AT INGESHI.SPACE
   width: 40vw;
   text-align: center;
   margin: 5vh 30vw 1vh 30vw;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
 }
 
 #landingbody {
@@ -100,14 +100,14 @@ VISIT MY WEBSITE AT INGESHI.SPACE
 }
 
 .boxbox {
-  background-color: rgba(10, 10, 10, 0.6);
+  background-color: rgba(0, 0, 0, 0.4);
   height: 33vh;
   padding: 7vh 0 0 45vw;
   transition: background 0.3s ease;
 }
 
 .boxbox:hover {
-  background-color: rgba(10, 10, 10, 0.8);
+  background-color: rgba(0, 0, 0, 0.8);
   border-bottom: 4px solid white;
 }
 
@@ -132,7 +132,7 @@ VISIT MY WEBSITE AT INGESHI.SPACE
   display: inline;
   float: left;
   padding-left: 2.5vw;
-  background: grey;
+  background: rgb(20, 20, 20);
   transition: background 0.3s ease;
 }
 
@@ -175,7 +175,6 @@ VISIT MY WEBSITE AT INGESHI.SPACE
   background-size: cover;
 }
 
-
 .roletext {
   width: 20vw;
 }
@@ -198,6 +197,11 @@ VISIT MY WEBSITE AT INGESHI.SPACE
 /* ROLES */
 
 /* COFFEE */
+#hidcoffee {
+  background: url(images/coffee.jpg);
+  background-size: cover;
+  display: none;
+}
 
 .coffeebox {
   width: 100vw;
@@ -208,14 +212,14 @@ VISIT MY WEBSITE AT INGESHI.SPACE
 }
 
 #phone {
-  height: 45vh;
+  width: 15vw;
   position: absolute;
-  bottom: -240vh;
-  left: 20vw;
+  bottom: -225vh;
+  left: 35vw;
 }
 
 .cofbox {
-  background-color: rgba(10, 10, 10, 0.6);
+  background-color: rgba(0, 0, 0, 0.4);
   height: 50vh;
   padding: 0 0 0 50vw;
   margin-bottom: 4px;
@@ -223,7 +227,7 @@ VISIT MY WEBSITE AT INGESHI.SPACE
 }
 
 .cofbox:hover {
-  background-color: rgba(10, 10, 10, 0.8);
+  background-color: rgba(0, 0, 0, 0.8);
   border-bottom: 4px solid white;
 }
 
@@ -231,7 +235,7 @@ VISIT MY WEBSITE AT INGESHI.SPACE
 
 /* GENERAL */
 body {
-  background-color: rgb(30, 30, 30);
+  background-color: rgb(20, 20, 20);
   padding: 0;
   margin: 0;
   overflow-x: hidden;
@@ -244,7 +248,7 @@ body {
 h1 {
   font-family: 'Libre Franklin', sans-serif;
   color: white;
-  font-size: 3em;
+  font-size: 2.5em;
   letter-spacing: 1px;
 }
 
@@ -274,4 +278,177 @@ a {
 
 a:hover {
   color: white;
+}
+
+
+/* TABLET */
+@media only screen and (max-width:883px) {
+  .box {
+    height: 52vh;
+    width: 80vw;
+  }
+  .boxbox {
+    height: 47vh;
+    padding: 5vh 0 0 45vw;
+  }
+
+  #phone {
+    bottom: -259vh;
+  }
+}
+
+@media only screen and (max-width:790px) {
+  #logo {
+    width: 20vw;
+    margin: 0 40vw;
+  }
+
+  #landing {
+    height: 80vh;
+  }
+
+  #arrows {
+    display: none;
+  }
+
+  .box {
+    width: 80vw;
+    height: auto;
+    background-size: cover;
+    margin: 10vh 10vw;
+  }
+
+  .boxbox {
+    background-color: rgba(0, 0, 0, 0.4);
+    height: auto;
+    padding: 7vh 0 7vh 15vw;
+    transition: background 0.3s ease;
+  }
+
+  .boxbox .divider {
+    height: 3px;
+    margin: 0 22vw;
+    padding: 0;
+    background-color: white;
+  }
+
+  .divider {
+    width: 6vw;
+  }
+
+  .boxbox h2 {
+    margin-left: 0;
+    text-align: center;
+    width: 50vw;
+  }
+
+  .boxtext {
+    width: 50vw;
+    text-align: center;
+  }
+
+  .role {
+    width: 65vw;
+    min-height: inherit;
+    padding: 0 0 5vh 15vw;
+    margin-bottom: 4vh;
+  }
+
+  .roletext {
+    width: 50vw;
+    float: left;
+  }
+
+  #role1, #role2 {
+    margin-right: 0vw;
+  }
+
+  .coffeebox {
+    margin: 200vh 0vw 0 0;
+  }
+
+  #phone {
+    display: none;
+  }
+
+  .boxbox {
+    background-color: rgba(0, 0, 0, 0.8);
+    border-bottom: 4px solid white;
+  }
+
+  .role {
+    border-bottom: 4px solid white;
+  }
+
+  #role1 {
+    background: url(images/start1.jpg);
+    background-size: cover;
+  }
+
+  #role2 {
+    background: url(images/resto1.jpg);
+    background-size: cover;
+  }
+
+  #role3 {
+    background: url(images/sewing1.jpg);
+    background-size: cover;
+  }
+
+  .coffeebox {
+    margin: 210vh 0vw 0 0;
+  }
+
+  .cofbox {
+    background-color: rgba(0, 0, 0, 0.8);
+    border-bottom: 4px solid white;
+    padding: 0;
+  }
+
+  .cofbox h2 {
+    text-align: center;
+  }
+
+  .cofbox .boxtext {
+    text-align: center;
+    margin: 0 0 0 15vw;
+    padding: 0;
+    width: 70vw;
+  }
+
+  .cofbox .divider {
+    margin: 0 0 2vh 47vw;
+  }
+}
+
+@media only screen and (max-width:700px) {
+  .coffeebox {
+    margin: 215vh 0vw 0 0;
+  }
+}
+
+@media only screen and (max-width:500px) {
+  .coffeebox {
+    margin: 232vh 0vw 0 0;
+  }
+
+  #landing {
+    height: 80vh;
+  }
+
+  #landingtext {
+    font-size: 2em;
+  }
+}
+
+@media only screen and (max-width:400px) {
+  .coffeebox {
+    margin: 236vh 0vw 0 0;
+  }
+}
+
+@media only screen and (max-width:320px) {
+  .coffeebox {
+    margin: 240vh 0vw 0 0;
+  }
 }
