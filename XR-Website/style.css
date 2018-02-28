@@ -175,6 +175,13 @@ VISIT MY WEBSITE AT INGESHI.SPACE
   background-size: cover;
 }
 
+#role4 {
+  background: url(images/coffee1.jpg);
+  background-size: cover;
+  display: none;
+  width: 100vw;
+}
+
 .roletext {
   width: 20vw;
 }
@@ -214,8 +221,8 @@ VISIT MY WEBSITE AT INGESHI.SPACE
 #phone {
   width: 15vw;
   position: absolute;
-  bottom: -225vh;
-  left: 35vw;
+  bottom: -223vh;
+  left: 33vw;
 }
 
 .cofbox {
@@ -270,8 +277,9 @@ p {
 
 a {
   font-family: 'Libre Franklin', sans-serif;
-  color: grey;
-  text-decoration: none;
+  color: white;
+  text-decoration: underline;
+  text-decoration-color: white;
   font-style: italic;
   transition: color 0.3s ease;
 }
@@ -281,19 +289,24 @@ a:hover {
 }
 
 
-/* TABLET */
+/* WIDTH */
 @media only screen and (max-width:883px) {
   .box {
     height: 52vh;
     width: 80vw;
   }
+
   .boxbox {
     height: 47vh;
     padding: 5vh 0 0 45vw;
   }
 
   #phone {
-    bottom: -259vh;
+    bottom: -243vh;
+  }
+
+  .coffeebox {
+    margin: 30vh 0vw 0 0;
   }
 }
 
@@ -363,10 +376,6 @@ a:hover {
     margin-right: 0vw;
   }
 
-  .coffeebox {
-    margin: 200vh 0vw 0 0;
-  }
-
   #phone {
     display: none;
   }
@@ -396,7 +405,12 @@ a:hover {
   }
 
   .coffeebox {
-    margin: 210vh 0vw 0 0;
+    margin: 200vh 0vw 0 0;
+    display: block;
+  }
+
+  #role4 {
+    display: none;
   }
 
   .cofbox {
@@ -421,17 +435,7 @@ a:hover {
   }
 }
 
-@media only screen and (max-width:700px) {
-  .coffeebox {
-    margin: 215vh 0vw 0 0;
-  }
-}
-
 @media only screen and (max-width:500px) {
-  .coffeebox {
-    margin: 232vh 0vw 0 0;
-  }
-
   #landing {
     height: 80vh;
   }
@@ -441,14 +445,37 @@ a:hover {
   }
 }
 
-@media only screen and (max-width:400px) {
+/* HEIGHT */
+
+@media only screen and (max-height:1100px) and (max-width: 789px){
   .coffeebox {
-    margin: 236vh 0vw 0 0;
+    display: none;
+  }
+
+  #role4 {
+    display: block;
+    margin: 0 0 0 -10vw;
+    padding: 0;
+    text-align: center;
+  }
+
+  #role4 h2 {
+    margin-top: 7vh;
+  }
+
+  #role4 .divider {
+    width: 6vw;
+    margin: 0 47vw;
+  }
+
+  #role4 .roletext {
+    width: 60vw;
+    margin: 2vh 20vw 7vh 20vw;
   }
 }
 
-@media only screen and (max-width:320px) {
-  .coffeebox {
-    margin: 240vh 0vw 0 0;
+@media only screen and (max-height:700px){
+  #logo {
+    padding-top: 15vh;
   }
 }
