@@ -23,7 +23,6 @@ VISIT MY WEBSITE AT INGESHI.SPACE
   width: 40vw;
   text-align: center;
   margin: 5vh 30vw 1vh 30vw;
-  /* text-transform: uppercase; */
 }
 
 #landingbody {
@@ -186,17 +185,17 @@ VISIT MY WEBSITE AT INGESHI.SPACE
   width: 20vw;
 }
 
-.icon1 svg{
+.icon1 svg {
   width: 10vw;
   margin: 4vh 7.5vw 1vh 5vw;
 }
 
-.icon2 svg{
+.icon2 svg {
   width: 14vw;
   margin: 4vh 5.5vw 1vh 3vw;
 }
 
-.icon3 svg{
+.icon3 svg {
   width: 11vw;
   margin: 4vh 7vw 1vh 4.5vw;
 }
@@ -291,6 +290,10 @@ a:hover {
 
 /* WIDTH */
 @media only screen and (max-width:883px) {
+  h1 {
+    font-size: 2em;
+  }
+
   .box {
     height: 52vh;
     width: 80vw;
@@ -435,13 +438,48 @@ a:hover {
   }
 }
 
-@media only screen and (max-width:500px) {
+@media only screen and (max-width:700px) {
+  /* h1 {
+    font-size: 1.5em;
+  } */
+
   #landing {
-    height: 80vh;
+    height: 75vh;
   }
 
   #landingtext {
-    font-size: 2em;
+    width: 60vw;
+    margin: 5vh 20vw 1vh 20vw;
+  }
+}
+
+@media only screen and (max-width:460px) {
+  h1 {
+    font-size: 1.7em;
+  }
+
+  #landing {
+    height: 70vh;
+  }
+
+  #landingtext {
+    width: 70vw;
+    margin: 5vh 15vw 1vh 15vw;
+  }
+}
+
+@media only screen and (max-width:340px) {
+  h1 {
+    font-size: 1.5em;
+  }
+
+  #landing {
+    height: 65vh;
+  }
+
+  #landingtext {
+    width: 70vw;
+    margin: 5vh 15vw 1vh 15vw;
   }
 }
 
