@@ -62,6 +62,10 @@ p {
   font-size: 12px;
 }
 
+i {
+  transition: color 0.1s;
+}
+
 /*END OF INDEX*/
 
 
@@ -105,13 +109,6 @@ h1.title {
   vertical-align: top;
   margin: 10px 0 0 0;
   padding: 0;
-}
-
-.picwrap {
-  margin: 0;
-  padding: 0;
-  height: auto;
-  width: 490px;
 }
 
 .imgwrap {
@@ -167,6 +164,11 @@ h1.title {
   width: 490px;
   display: table-cell !important;
   vertical-align: top;
+}
+
+.centred-wide {
+  width: 1000px;
+  text-align: center;
 }
 
 p.caption {
@@ -281,22 +283,28 @@ ul > li, ul > li:active {
   width: 100%;
 }
 
+.inline-link {
+  text-decoration: underline;
+  transition: color 0.3s;
+}
+
+.inline-link:hover, i:hover {
+  text-decoration: underline;
+  color: #EE0000;
+}
+
 /* GWDF Book Thing */
 
-.container {
+.book-container {
   width: 1000px;
   z-index: 1;
   perspective: 3000px;
 }
 
-.container .book {
+.book-container .book {
   position: relative;
   display: block;
-  width: 550px;
-  height: 547px;
-  margin: 60px 225px 60px 315px;
   border-radius: 2px 4px 4px 2px;
-  background: linear-gradient(45deg, #907ab2 10%, #000000 100%);
   -webkit-box-shadow: 18px 15px 15px 5px rgba(151, 146, 153, 0.6);
   -moz-box-shadow: 18px 15px 15px 5px rgba(151, 146, 153, 0.6);
   box-shadow: 18px 15px 15px 5px rgba(151, 146, 153, 0.6);
@@ -308,18 +316,48 @@ ul > li, ul > li:active {
   transition: transform .5s;
 }
 
-.container .book:hover {
+.ghost {
+  width: 550px;
+  height: 547px;
+  background: linear-gradient(45deg, #907ab2 10%, #000000 100%);
+}
+
+.ghost-spacing {
+  margin: 60px 225px 60px 315px;
+}
+
+.aspect {
+  width: 400px;
+  height: 577px;
+  background: linear-gradient(45deg, #b2a710 0%, #000000 50%);
+}
+
+.aspect-spacing {
+  margin: 60px 300px 60px 390px;
+}
+
+.edge {
+  width: 420px;
+  height: 594px;
+  background: linear-gradient(45deg, #021b64 20%, #000000 100%);
+}
+
+.edge-spacing {
+  margin: 60px 310px 60px 380px;
+}
+
+.book-container .book:hover {
   -webkit-transform: rotate3d(0, 1, 0, 35deg);
   -moz-transform: rotate3d(0, 1, 0, 35deg);
   transform: rotate3d(0, 1, -0.1, 30deg);
 }
 
-.container .book>div, .container .front>div {
+.book-container .book>div, .book-container .front>div {
   display: block;
   position: absolute;
 }
 
-.container .front {
+.book-container .front {
   -webkit-transform-style: preserve-3d;
   -moz-transform-style: preserve-3d;
   transform-style: preserve-3d;
@@ -335,17 +373,12 @@ ul > li, ul > li:active {
   z-index: 10;
 }
 
-.container .front>div {
-  width: 550px;
-  height: 550px;
-}
-
-.container .front>div {
+.book-container .front>div {
   border-radius: 0 3px 3px 0;
   box-shadow: inset 4px 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.container .front:after {
+.book-container .front:after {
   content: '';
   position: absolute;
   top: 1px;
@@ -354,7 +387,7 @@ ul > li, ul > li:active {
   width: 1px;
 }
 
-.container .cover:after {
+.book-container .cover:after {
   content: '';
   position: absolute;
   top: 0;
@@ -363,10 +396,6 @@ ul > li, ul > li:active {
   width: 3px;
   background: rgba(0, 0, 0, 0.1);
   box-shadow: 1px 0 3px rgba(255, 255, 255, 0.1);
-}
-
-.cover {
-  background: linear-gradient(45deg, #907ab2 0%, #f2ebf4 100%);
 }
 
 /* FOOTER */
