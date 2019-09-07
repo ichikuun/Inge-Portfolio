@@ -20,9 +20,9 @@ I have always had black backgrounds and what I think now are gloomy-looking webs
 **9 Sept 2019**: Finished revamp in this commit. Not responsive yet.
 
 # Sitemap
-1. [Homepage](www.ingeshi.space/index.html)
-1. [Boundless Documentary](www.ingeshi.space/boundless.html)
-1. [Dusk Short Film](www.ingeshi.space/dusk.html)
+1. [Homepage](/index.html)
+1. [Boundless Documentary]/boundless.html)
+1. [Dusk Short Film]/dusk.html)
 1. [FMS30 Event](www.ingeshi.space/fms30.html)
 1. [FMS Open House Event](www.ingeshi.space/open.html)
 1. [Rice Page Design](www.ingeshi.space/rice.html)
