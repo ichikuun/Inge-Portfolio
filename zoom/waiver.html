@@ -1,0 +1,160 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <title>Waiver Form: Zoom Park Singapore</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="shortcut icon" href="images/favicon.ico">
+  <meta charset="UTF-8">
+  <meta name="description" content="trampoline park in Singapore">
+  <meta name="keywords" content="trampoline, park, fun, family">
+  <meta name="author" content="athena media group">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<!-- NAVIGATION -->
+<div id="navii">
+  <ul>
+    <li>MENU
+      <ul>
+        <li><a href="park.html">Our Park</a>
+          <ul class="sub">
+            <li><a href="park.html#about">About Us</a></li>
+            <li><a href="park.html#price">Admission Prices</a></li>
+            <li><a href="park.html#safety">Safety</a></li>
+            <li><a href="park.html#faq">FAQs</a></li>
+          </ul>
+          <li><a href="attractions.html">Attractions</a></li>
+          <li><a href="programs.html">Programs</a>
+            <ul class="sub">
+              <li><a href="programs.html#jump">Jump Acrobat</a></li>
+              <li><a href="programs.html#kids">Zoom Kids</a></li>
+              <li><a href="programs.html#night">Zoom Night</a></li>
+              <li><a href="programs.html#baby">Baby Bounce</a></li>
+              <li><a href="programs.html#fitness">Fitness Classes</a></li>
+            </ul>
+            <li><a href="event.html">Events</a>
+              <ul class="sub">
+                <li><a href="event.html#birthday">Birthday Parties</a></li>
+                <li><a href="event.html#school">School Events</a></li>
+                <li><a href="event.html#corporate">Corporate Events</a></li>
+              </ul>
+              <li><a href="contact.html">Contact Us</a></li>
+              <li><a href="waiver.html">Waiver</a></li>
+              <li><a href="book.html">Book Now</a></li>
+      </ul>
+  </ul>
+
+  <a href="index.html"><img id="logo" src="images/logo.png">
+
+  </div>
+<!-- NAVIGATION -->
+
+<body id="event">
+<!-- BACK TO TOP -->
+  <a href="#" class="scrollup">BACK TO TOP</a>
+  <!-- BACK TO TOP -->
+
+  <!-- CONTENT -->
+  <h1 id="h1contact">WAIVER FORM</h1>
+  <h2 class="h2contact" style="text-align: center; width: 1000px;">IMPORTANT!</h2>
+  <p style="text-align: center; width: 500px; margin: 0 250px;">Please print out this form and sign it. Any minors below 18 years old need to have a legal guardian or parent to sign on their behalf. Anyone with no waiver form are strictly not allowed to use any of Zoom Park Singapore's facilities.</p>
+  <br>
+  <iframe src="http://docs.google.com/gview?url=http://usiale.org/lasvegas2004/forms/waiver.pdf&embedded=true" style="width:800px; height:1000px; margin: 0px 100px;" frameborder="0"></iframe>
+  <!-- CONTENT -->
+
+  </body>
+
+  <!-- FOOTER -->
+  <footer id="waiver">
+    <div id="footsie">
+      <p id="irritating">What are you waiting for?</p>
+      <button id="footsienow"><a href="book.html">Book now!</a></button>
+    </div>
+
+    <div id="footer">
+
+      <p id="toe1"><b>Zoom Park Singapore</b><br>Phone: 6334 4615<br>Info enquiry: info@zoomparkasia.com
+        <br>Events enquiry: events@zoomparkasia.com
+        <br>Media and PR: pr@zoomparkasia.com<br>-
+        <br>All Rights Reserved.<br>© 2017 Zoom Park Ltd<br>Careers<br>Terms and Conditions<br>Privacy Policy<br><a href="https://ichikuun.github.io">Website by Athena</a></p>
+
+      <p id="toe2">200 Pandan Gardens<br>#01-14, Singapore 609336<br>-
+        <br>Mondays: 3pm to 7pm
+        <br>Thursday to Friday: 10am to 7pm
+        <br>Weekends and Public Holidays: Closed<br><br>
+        <img src="images/icons/tw1.png" href="#" ; class="icon" alt="twitter">
+        <img src="images/icons/fb1.png" href="#" ; class="icon" alt="facebook">
+        <img src="images/icons/yt1.png" href="#" ; class="icon" alt="youtube">
+        <img src="images/icons/insta.svg" href="#" ; class="icon" alt="instagram">
+      </p>
+
+    </div>
+  </footer>
+  <!-- FOOTER -->
+
+  <script>
+    $(document).ready(function() {
+      $('.scrollup').hide();
+      $(window).scroll(function() {
+        if ($(this).scrollTop() > 100) {
+          $('.scrollup').fadeIn();
+        } else {
+          $('.scrollup').fadeOut();
+        }
+      });
+
+      $('.scrollup').click(function() {
+        $("html, body").animate({
+          scrollTop: 0
+        }, 600);
+        return false;
+      });
+
+    });
+
+    function init_map() {
+      var myOptions = {
+        zoom: 16,
+        center: new google.maps.LatLng(1.3211227, 103.74691269999994),
+        mapTypeId: google.maps.MapTypeId.ROADMAP
+      };
+      map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);
+      marker = new google.maps.Marker({
+        map: map,
+        position: new google.maps.LatLng(1.3211227, 103.74691269999994)
+      });
+      infowindow = new google.maps.InfoWindow({
+        content: '<strong>Zoom Park Singapore</strong><br>200 Pandan Gardens #01-14, Singapore 609336<br>'
+      });
+      google.maps.event.addListener(marker, 'click', function() {
+        infowindow.open(map, marker);
+      });
+      infowindow.open(map, marker);
+    }
+    google.maps.event.addDomListener(window, 'load', init_map);
+
+    (function() {
+
+      var parallax = document.querySelectorAll(".parallax"),
+        speed = 0.2;
+
+      window.onscroll = function() {
+        [].slice.call(parallax).forEach(function(el, i) {
+
+          var windowYOffset = window.pageYOffset,
+            elBackgrounPos = "50% " + (windowYOffset * speed) + "px";
+
+          el.style.backgroundPosition = elBackgrounPos;
+
+        });
+      };
+
+    })();
+  </script>
+
+</html>
