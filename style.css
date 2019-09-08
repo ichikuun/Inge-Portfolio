@@ -1,11 +1,9 @@
-/* NOTES
-margin: top right bottom left
-font: font-style font-variant font-weight font-size/line-height font-family
-
-/* color INDEX
-rgba( 21, 62, 172, 1)
-#EE0000
-rgb(50, 50, 50)
+/* COLOUR PALETTE
+WHITE BACKGROUND: rgb(252, 252, 252)
+BLUE TEXT H2: rgba(21, 62, 172, 1)
+RED TEXT H1: rgb(238, 0, 0)
+DARK GRAY TEXT P: rgb(50, 50, 50)
+LINES BORDERS GRAY: rgba(0, 0, 0, 0.2)
 #/
 
 /* GENERAL */
@@ -33,11 +31,11 @@ hr {
   border-left: none;
   border-right: none;
   border-bottom-width: 1px;
-  border-bottom-color: rgba( 0,0,0, 0.2);
+  border-bottom-color: rgba(0, 0, 0, 0.2);
 }
 
 h1 {
-  color: #EE0000;
+  color: rgb(238,0,0);
   font-family: 'Lexend Zetta','ZCOOL XiaoWei', sans-serif;
   text-transform: uppercase;
   letter-spacing: 4px;
@@ -66,11 +64,6 @@ i {
   transition: color 0.1s;
 }
 
-/*END OF INDEX*/
-
-
-/*NORMAL WORKS TEMPLATE*/
-
 .headerwrap {
   width: 1000px;
   padding-left: 90px;
@@ -90,16 +83,27 @@ h1.intro > i {
   text-decoration: underline;
   text-decoration-style: wavy;
   text-decoration-skip-ink: none;
-  text-decoration-color: rgba( 21, 62, 172, 0.7);
+  text-decoration-color: rgba( 21, 62, 172, 1);
 }
 
 h1.intro a {
-  color: rgba( 21, 62, 172, 0.7);
-  transition: all ease 0.5s;
+  color: rgba( 21, 62, 172, 1);
 }
 
 h1.intro a:hover {
-  color: rgba( 21, 62, 172, 1);
+  animation: email 1s;
+}
+
+@keyframes email {
+  0% {
+    color: rgba( 21, 62, 172, 1);
+  }
+  40% {
+    color: #ee0000;
+  }
+  100% {
+    color: rgba( 21, 62, 172, 1);
+  }
 }
 
 h1.title {
@@ -247,7 +251,7 @@ ul > li, ul > li:active {
 }
 
 .port-hover:hover > h2 {
-  color: #EE0000;
+  color: rgb(238,0,0);
 }
 
 .port-hover span {
@@ -257,7 +261,7 @@ ul > li, ul > li:active {
   bottom: 0;
   width: 0;
   opacity: 0;
-  border-bottom: 2px solid #EE0000;
+  border-bottom: 2px solid rgb(238,0,0);
   transition: width 0.6s, opacity 0.4s;
 }
 
@@ -290,7 +294,7 @@ ul > li, ul > li:active {
 
 .inline-link:hover, i:hover {
   text-decoration: underline;
-  color: #EE0000;
+  color: rgb(238,0,0);
 }
 
 /* GWDF Book Thing */
@@ -439,14 +443,14 @@ button {
 }
 
 .presentation-button:hover {
-  color: #EE0000;
+  color: rgb(238,0,0);
   background: rgba( 0,0,0, 0.15);
 }
 
 .presentation-button:active, .presentation-button:focus,
 .presentation-button:target, {
-  color: #EE0000;
-  border-color: #EE0000;
+  color: rgb(238,0,0);
+  border-color: rgb(238,0,0);
   background: rgba( 0,0,0, 0.15);
 }
 
