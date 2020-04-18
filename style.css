@@ -9,24 +9,27 @@ LINES BORDERS GRAY: rgba(0, 0, 0, 0.2)
 /* GENERAL */
 body {
   background-color: rgb(252,252,252);
-  padding: 0;
   margin: 0;
-  height: 100%;
-  width: 1180px;
-  scroll-behavior: smooth;
+  height: 100vw;
+  padding: 0 15vw;
+  width: 70vw;
   display: table-cell;
+  scroll-behavior: smooth;
   vertical-align: middle;
   overflow-x: hidden;
+  max-width: 1280px;
 }
 
 html {
   display: table;
-  margin: auto;
+  margin: 0;
+  width: 100vw;
 }
 
 hr {
-  width: 1000px;
-  margin: 20px 0 0 90px;
+  width: 70vw;
+  margin: 0;
+  padding: 0;
   border-top: none;
   border-left: none;
   border-right: none;
@@ -39,7 +42,8 @@ h1 {
   font-family: 'Lexend Zetta','ZCOOL XiaoWei', sans-serif;
   text-transform: uppercase;
   letter-spacing: 4px;
-  font-size: 18pt;
+  font-size: 2vw;
+  margin: 0;
 }
 
 a {
@@ -57,7 +61,7 @@ p {
   color: rgb(50, 50, 50);
   font-family: 'Rubik', sans-serif;
   letter-spacing: 1px;
-  font-size: 12px;
+  font-size: 1vw;
 }
 
 i {
@@ -65,8 +69,7 @@ i {
 }
 
 .headerwrap {
-  width: 1000px;
-  padding-left: 90px;
+  width: 70vw;
   clear: both;
 }
 
@@ -74,8 +77,8 @@ h1.intro {
   font-family: 'Rubik', sans-serif;
   font-weight: 500;
   text-transform: none;
-  letter-spacing: 1px;
-  font-size: 21pt;
+  letter-spacing: 0.05vw;
+  font-size: 2vw;
 }
 
 h1.intro > i {
@@ -95,23 +98,23 @@ h1.intro a:hover {
 }
 
 @keyframes email {
-  0% {
+  0vw {
     color: rgba( 21, 62, 172, 1);
   }
-  40% {
+  40vw {
     color: #ee0000;
   }
-  100% {
+  100vw {
     color: rgba( 21, 62, 172, 1);
   }
 }
 
 h1.title {
-  width: 50%;
+  width: 50vw;
   height: auto;
   float: left;
   vertical-align: top;
-  margin: 10px 0 0 0;
+  margin: 0;
   padding: 0;
 }
 
@@ -119,83 +122,86 @@ h1.title {
   display: table;
   float: left;
   height: auto;
-  padding: 50px 0 50px 90px;
+  width: inherit;
+  padding: 5vh 0;
 }
 
 .descrwrap {
-  padding: 0 0 50px 90px;
+  padding: 0 0 8vh 15vw;
 }
 
 .introwrap1 {
   height: auto;
-  width: 450px;
-  display: table-cell !important;
+  width: 30vw;
+  display: table-cell;
   vertical-align: top;
+  padding: 0;
+  margin: 0;
 }
 
 .introwrap2 {
-  padding-left: 20px !important;
-  padding-top: 0px;
+  padding-left: 2vw;
+  padding-top: 0;
   margin: 0;
   height: auto;
-  width: 530px;
-  display: table-cell !important;
+  width: 30vw;
+  display: table-cell;
   vertical-align: top;
 }
 
 .gallerywrap {
-  width: 1000px;
+  width: 70vw;
   display: table;
   float: left;
   height: auto;
-  padding: 15px 0 0 90px;
+  padding: 1vh 0;
 }
 
 .picwrap1 {
   padding: 0;
   margin: 0;
   height: auto;
-  width: 490px;
-  display: table-cell !important;
+  width: 30vw;
+  display: table-cell;
   vertical-align: top;
 }
 
 .picwrap2 {
-  padding-left: 20px !important;
-  padding-top: 0px;
+  padding-left: 2vw;
+  padding-top: 0;
   margin: 0;
   height: auto;
-  width: 490px;
-  display: table-cell !important;
+  width: 30vw;
+  display: table-cell;
   vertical-align: top;
 }
 
 .centred-wide {
-  width: 1000px;
+  width: 70vw;
   text-align: center;
 }
 
 p.caption {
   color: rgba(50, 50, 50,0.8);
   font-family: 'Rubik', sans-serif;
-  letter-spacing: 1px;
-  font-size: 12px;
+  letter-spacing: 0.05vw;
+  font-size: 1vw;
   font-weight: 400;
   font-style: none;
-  padding-top: 0px;
+  padding: .5vh 0 0 0;
   margin: 0;
-  line-height: 20px;
+  line-height: 2vh;
 }
 
 h2 {
   color: rgba( 21, 62, 172, 1);
   font-family: 'Rubik', 'ZCOOL XiaoWei', sans-serif;
-  font-size: 12px;
+  font-size: 1.1vw;
   text-transform: uppercase;
   text-align: left;
-  letter-spacing: 2px;
-  margin: 20px 0 0 0;
-  padding: 0;
+  letter-spacing: 0.05vw;
+  margin: 0;
+  padding-top: 1vh;
 }
 
 /* different font for mandarin */
@@ -206,7 +212,7 @@ h2 {
 }
 
 ul {
-  font-size: 10pt;
+  font-size: 1vw;
   font-family: 'Rubik', sans-serif;
   list-style-type: none;
   letter-spacing: 1px;
@@ -223,15 +229,19 @@ ul > li {
   display: list-item;
   color: rgb(50, 50, 50);
   font-family: 'Rubik', sans-serif;
-  font-size: 12px;
-  line-height: 20px;
+  font-size: 1vw;
+  line-height: 1.5vh;
   font-weight: 300;
-  padding: 0 0 3px 0;
+  padding: 0 0 0.7vh 0;
   margin: 0;
 }
 
 ul > li, ul > li:active {
   color: inherit;
+}
+
+.skills-bullets li {
+  padding-bottom: 1vh;
 }
 
 .picwrap2 a {
@@ -242,7 +252,8 @@ ul > li, ul > li:active {
 .port-hover {
   text-decoration: none;
   position: relative;
-  padding-bottom: 10px;
+  padding-bottom: 1vh;
+  margin-bottom: 1vh;
 }
 
 .port-hover h2 {
@@ -266,24 +277,31 @@ ul > li, ul > li:active {
 }
 
 .port-hover:hover > span {
-  width: 70%;
+  width: 30vw;
   opacity: 1;
 }
 
 .video {
-  width: 100%;
-  height: 306px;
+  width: 33.5vw;
+  height: 25vh;
   margin: 0;
+  padding: 0;
 }
 
 .fullvideo {
-  width: 1000px;
-  height: 540px;
+  width: 70vw;
+  height: 50vh;
   margin: 0;
 }
 
-.pic {
+.pic, img {
   padding: 0;
+  margin: 0;
+  width: inherit;
+  height: auto;
+}
+
+.gallerywrap img {
   width: 100%;
 }
 
@@ -300,7 +318,7 @@ ul > li, ul > li:active {
 /* GWDF Book Thing */
 
 .book-container {
-  width: 1000px;
+  width: 70vw;
   z-index: 1;
   perspective: 3000px;
 }
@@ -323,17 +341,17 @@ ul > li, ul > li:active {
 .ghost {
   width: 550px;
   height: 547px;
-  background: linear-gradient(45deg, #907ab2 10%, #000000 100%);
+  background: linear-gradient(45deg, #907ab2 10vw, #000000 100vw);
 }
 
 .ghost-spacing {
-  margin: 60px 225px 60px 315px;
+  margin: 7vh 15vw;
 }
 
 .aspect {
   width: 400px;
   height: 577px;
-  background: linear-gradient(45deg, #b2a710 0%, #000000 50%);
+  background: linear-gradient(45deg, #b2a710 0vw, #000000 50vw);
 }
 
 .aspect-spacing {
@@ -343,7 +361,7 @@ ul > li, ul > li:active {
 .edge {
   width: 420px;
   height: 594px;
-  background: linear-gradient(45deg, #021b64 20%, #000000 100%);
+  background: linear-gradient(45deg, #021b64 20vw, #000000 100vw);
 }
 
 .edge-spacing {
@@ -365,9 +383,9 @@ ul > li, ul > li:active {
   -webkit-transform-style: preserve-3d;
   -moz-transform-style: preserve-3d;
   transform-style: preserve-3d;
-  -webkit-transform-origin: 0% 50%;
-  -moz-transform-origin: 0% 50%;
-  transform-origin: 0% 50%;
+  -webkit-transform-origin: 0vw 50vw;
+  -moz-transform-origin: 0vw 50vw;
+  transform-origin: 0vw 50vw;
   -webkit-transition: -webkit-transform .5s;
   -moz-transition: -moz-transform .5s;
   transition: transform .5s;
@@ -406,27 +424,23 @@ ul > li, ul > li:active {
 
 .website-display {
   border: none;
-  padding: 50px 0 30px 90px;
+  padding: 5vh 0;;
 }
 
 .zoom {
-  width: 1000px;
-  height: 700px;
+  width: 70vw;
+  height: 70vh;
 }
 
 .jojo {
-  width: 1000px;
-  height: 562px;
+  width: 70vw;
+  height: 50vh;
 }
 
 .presentation {
-  width: 700px;
-  margin: 0 150px;
+  width: 50vw;
+  margin: 0 10vh;
   border: 3px rgba(0,0,0, 0.9);
-}
-
-.slides {
-  width: 700px;
 }
 
 button {
@@ -434,7 +448,7 @@ button {
 }
 
 .presentation-button {
-  width: 50%;
+  width: 25vw;
   color: rgba( 21, 62, 172, 1);
   background: rgba( 0,0,0, 0.1);
   border-width: 1px;
@@ -458,11 +472,7 @@ button {
 
 /* FOOTER */
 footer {
-  width: 1180px;
-}
-
-#footerlogo {
-  width: 50px;
+  width: inherit;
 }
 
 ::-webkit-scrollbar {
@@ -472,3 +482,7 @@ footer {
 ::-webkit-scrollbar-thumb {
   background: transparent;
 }
+
+
+
+/* MOBILE MEDIA QUERIES */
