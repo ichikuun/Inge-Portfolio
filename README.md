@@ -19,6 +19,8 @@ I have always had black backgrounds and what I think now are gloomy-looking webs
 
 **9 Sept 2019**: Finished revamp in this commit. Not responsive yet.
 
+**18 Apr 2020**: Updated index.html with new job information. Started on making pages responsive with vh & vw values instead of px.   
+
 # Sitemap
 1. [Homepage](/index.html)
 1. [Boundless Documentary](/boundless.html)
