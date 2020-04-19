@@ -10,9 +10,9 @@ LINES BORDERS GRAY: rgba(0, 0, 0, 0.2)
 body {
   background-color: rgb(252,252,252);
   margin: 0;
-  height: 100vw;
-  padding: 0 15vw;
-  width: 70vw;
+  padding: 0;
+  height; 100%;
+  width: 1000px;
   display: table-cell;
   scroll-behavior: smooth;
   vertical-align: middle;
@@ -21,12 +21,12 @@ body {
 
 html {
   display: table;
-  margin: 0;
-  width: 100vw;
+  margin: 0 auto;
+  width: 1000px;
 }
 
 hr {
-  width: 70vw;
+  width: 1000px;
   margin: 0;
   padding: 0;
   border-top: none;
@@ -41,7 +41,7 @@ h1 {
   font-family: 'Lexend Zetta','ZCOOL XiaoWei', sans-serif;
   text-transform: uppercase;
   letter-spacing: 4px;
-  font-size: 2vw;
+  font-size: 20pt;
   margin: 0;
 }
 
@@ -54,13 +54,14 @@ a {
 
 * {
   scroll-behavior: smooth;
+  transition: width 0.5s; /*NOTE*/
 }
 
 p {
   color: rgb(50, 50, 50);
   font-family: 'Rubik', sans-serif;
   letter-spacing: 1px;
-  font-size: 1vw;
+  font-size: 9pt;
 }
 
 i {
@@ -68,7 +69,7 @@ i {
 }
 
 .headerwrap {
-  width: 70vw;
+  width: 1000px;
   clear: both;
 }
 
@@ -76,8 +77,8 @@ h1.intro {
   font-family: 'Rubik', sans-serif;
   font-weight: 500;
   text-transform: none;
-  letter-spacing: 0.05vw;
-  font-size: 2vw;
+  letter-spacing: 1px;
+  font-size: 20pt;
 }
 
 h1.intro > i {
@@ -109,7 +110,7 @@ h1.intro a:hover {
 }
 
 h1.title {
-  width: 50vw;
+  width: 450px;
   height: auto;
   float: left;
   vertical-align: top;
@@ -131,7 +132,7 @@ h1.title {
 
 .introwrap1 {
   height: auto;
-  width: 30vw;
+  width: 450px;
   display: table-cell;
   vertical-align: top;
   padding: 0;
@@ -139,17 +140,16 @@ h1.title {
 }
 
 .introwrap2 {
-  padding-left: 2vw;
-  padding-top: 0;
+  padding: 20px;
   margin: 0;
   height: auto;
-  width: 30vw;
+  width: 450px;
   display: table-cell;
   vertical-align: top;
 }
 
 .gallerywrap {
-  width: 70vw;
+  width: 1000px;
   display: table;
   float: left;
   height: auto;
@@ -176,31 +176,31 @@ h1.title {
 }
 
 .centred-wide {
-  width: 70vw;
+  width: 1000px;
   text-align: center;
 }
 
 p.caption {
   color: rgba(50, 50, 50,0.8);
   font-family: 'Rubik', sans-serif;
-  letter-spacing: 0.05vw;
-  font-size: 1vw;
+  letter-spacing: 1px;
+  font-size: 11pt;
   font-weight: 400;
   font-style: none;
-  padding: .5vh 0 0 0;
+  padding: 5px 0 0 0;
   margin: 0;
-  line-height: 2vh;
+  line-height: 21px;
 }
 
 h2 {
   color: rgba( 21, 62, 172, 1);
   font-family: 'Rubik', 'ZCOOL XiaoWei', sans-serif;
-  font-size: 1.1vw;
+  font-size: 12pt;
   text-transform: uppercase;
   text-align: left;
-  letter-spacing: 0.05vw;
+  letter-spacing: 1px;
   margin: 0;
-  padding-top: 1vh;
+  padding-top: 20px;
 }
 
 /* different font for mandarin */
@@ -211,7 +211,7 @@ h2 {
 }
 
 ul {
-  font-size: 1vw;
+  font-size: 9pt;
   font-family: 'Rubik', sans-serif;
   list-style-type: none;
   letter-spacing: 1px;
@@ -228,10 +228,10 @@ ul > li {
   display: list-item;
   color: rgb(50, 50, 50);
   font-family: 'Rubik', sans-serif;
-  font-size: 1vw;
-  line-height: 1.5vh;
+  font-size: 11pt;
+  line-height: 18px;
   font-weight: 300;
-  padding: 0 0 0.7vh 0;
+  padding: 0 0 12px 0;
   margin: 0;
 }
 
@@ -240,7 +240,7 @@ ul > li, ul > li:active {
 }
 
 .skills-bullets li {
-  padding-bottom: 1vh;
+  padding-bottom: 10px;
 }
 
 .picwrap2 a {
@@ -251,8 +251,8 @@ ul > li, ul > li:active {
 .port-hover {
   text-decoration: none;
   position: relative;
-  padding-bottom: 1vh;
-  margin-bottom: 1vh;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
 }
 
 .port-hover h2 {
@@ -281,14 +281,14 @@ ul > li, ul > li:active {
 }
 
 .video {
-  width: 33.5vw;
-  height: 25vh;
+  width: 100%;
+  height: 300px;
   margin: 0;
   padding: 0;
 }
 
 .fullvideo {
-  width: 70vw;
+  width: 1000px;
   height: 50vh;
   margin: 0;
 }
@@ -317,7 +317,7 @@ ul > li, ul > li:active {
 /* GWDF Book Thing */
 
 .book-container {
-  width: 70vw;
+  width: 1000px;
   z-index: 1;
   perspective: 3000px;
 }
@@ -354,7 +354,7 @@ ul > li, ul > li:active {
 }
 
 .aspect-spacing {
-  margin: 60px 300px 60px 390px;
+  margin: 60px 300px 60px 300px;
 }
 
 .edge {
@@ -364,7 +364,7 @@ ul > li, ul > li:active {
 }
 
 .edge-spacing {
-  margin: 60px 310px 60px 380px;
+  margin: 60px 300px 60px 300px;
 }
 
 .book-container .book:hover {
@@ -427,18 +427,18 @@ ul > li, ul > li:active {
 }
 
 .zoom {
-  width: 70vw;
+  width: 1000px;
   height: 70vh;
 }
 
 .jojo {
-  width: 70vw;
-  height: 50vh;
+  width: 1000px;
+  height: 550px;
 }
 
 .presentation {
-  width: 50vw;
-  margin: 0 10vh;
+  width: 700px;
+  margin: 0 150px;
   border: 3px rgba(0,0,0, 0.9);
 }
 
@@ -447,12 +447,11 @@ button {
 }
 
 .presentation-button {
-  width: 25vw;
+  width: 350px;
   color: rgba( 21, 62, 172, 1);
   background: rgba( 0,0,0, 0.1);
   border-width: 1px;
   border-color: rgba( 0,0,0, 0.2);
-  animation: all 0.3s;
 }
 
 .presentation-button:hover {
