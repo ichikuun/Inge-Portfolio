@@ -9,20 +9,21 @@ LINES BORDERS GRAY: rgba(0, 0, 0, 0.2)
 /* GENERAL */
 body {
   background-color: rgb(252,252,252);
-  margin: 0;
+  margin: 0 auto;
   height: 100vw;
   padding: 0 15vw;
   width: 70vw;
   display: table-cell;
   scroll-behavior: smooth;
   vertical-align: middle;
-  overflow-x: hidden;
+  overflow: scroll;
 }
 
 html {
   display: table;
-  margin: 0;
+  margin: 0 auto;
   width: 100vw;
+  overflow-x: hidden;
 }
 
 hr {
@@ -34,6 +35,7 @@ hr {
   border-right: none;
   border-bottom-width: 1px;
   border-bottom-color: rgba(0, 0, 0, 0.2);
+  clear: both;
 }
 
 h1 {
@@ -63,15 +65,58 @@ p {
   font-size: 1vw;
 }
 
-i {
-  transition: color 0.1s;
-}
-
+/* Title & description centred in middle of portfolio pages */
 .headerwrap {
   width: 70vw;
   clear: both;
 }
 
+.navwrap1 {
+  padding: 0;
+  margin: 0;
+  height: auto;
+  width: 35vw;
+  display: table-cell;
+  vertical-align: top;
+}
+
+.navwrap2 {
+  padding-left: 2vw;
+  padding-top: 0;
+  margin: 0;
+  height: auto;
+  width: 35vw;
+  text-align: right;
+  display: table-cell;
+  vertical-align: top;
+  position: relative;
+}
+
+.navwrap2 a {
+  transition: color 0.1s ease-in-out;
+}
+
+.navwrap2 a:hover {
+  color: rgb(238, 0, 0);
+}
+
+.navwrap2 a::before {
+  position: absolute;
+  width: 0%;
+  content: "";
+  height: 1px;
+  background-color: rgb(50, 50, 50);
+  bottom: 0;
+  right: 0;
+  transition: all 0.3s ease-in-out;
+}
+
+.navwrap2 a:hover::before {
+  width: 100%;
+  background-color: rgb(238, 0, 0);
+}
+
+/* Intro text & photo, first section of index.html */
 h1.intro {
   font-family: 'Rubik', sans-serif;
   font-weight: 500;
@@ -90,22 +135,22 @@ h1.intro > i {
 
 h1.intro a {
   color: rgba( 21, 62, 172, 1);
+  position: relative;
 }
 
-h1.intro a:hover {
-  animation: email 1s;
+h1.intro a::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background-color: rgba( 21, 62, 172, 1);
+  transition: width 0.3s ease-in-out;
 }
 
-@keyframes email {
-  0vw {
-    color: rgba( 21, 62, 172, 1);
-  }
-  40vw {
-    color: #ee0000;
-  }
-  100vw {
-    color: rgba( 21, 62, 172, 1);
-  }
+h1.intro a:hover::before {
+  width: 100%;
 }
 
 h1.title {
@@ -118,15 +163,11 @@ h1.title {
 }
 
 .imgwrap {
-  display: table;
+  display: table-cell;
   float: left;
   height: auto;
   width: inherit;
   padding: 5vh 0;
-}
-
-.descrwrap {
-  padding: 0 0 8vh 15vw;
 }
 
 .introwrap1 {
@@ -139,11 +180,11 @@ h1.title {
 }
 
 .introwrap2 {
-  padding-left: 2vw;
+  padding-left: 6vw;
   padding-top: 0;
   margin: 0;
   height: auto;
-  width: 30vw;
+  width: 35vw;
   display: table-cell;
   vertical-align: top;
 }
@@ -160,7 +201,7 @@ h1.title {
   padding: 0;
   margin: 0;
   height: auto;
-  width: 30vw;
+  width: 35vw;
   display: table-cell;
   vertical-align: top;
 }
@@ -170,7 +211,7 @@ h1.title {
   padding-top: 0;
   margin: 0;
   height: auto;
-  width: 30vw;
+  width: 35vw;
   display: table-cell;
   vertical-align: top;
 }
@@ -248,6 +289,25 @@ ul > li, ul > li:active {
   padding: 0;
 }
 
+a.in-text-links {
+  position: relative;
+}
+
+a.in-text-links::before {
+  content: "";
+  width: 0;
+  position: absolute;
+  height: 1px;
+  bottom: 0;
+  left: 0;
+  background-color: rgba( 21, 62, 172, 1);
+  transition: width 0.2s ease-in-out;
+}
+
+a.in-text-links:hover::before {
+  width: 100%;
+}
+
 .port-hover {
   text-decoration: none;
   position: relative;
@@ -257,7 +317,7 @@ ul > li, ul > li:active {
 
 .port-hover h2 {
   color: rgba( 21, 62, 172, 1);
-  transition: color 0.4s;
+  transition: color 0.3s;
 }
 
 .port-hover:hover > h2 {
@@ -272,7 +332,7 @@ ul > li, ul > li:active {
   width: 0;
   opacity: 0;
   border-bottom: 2px solid rgb(238,0,0);
-  transition: width 0.6s, opacity 0.4s;
+  transition: width 0.4s, opacity 0.3s;
 }
 
 .port-hover:hover > span {
@@ -300,18 +360,12 @@ ul > li, ul > li:active {
   height: auto;
 }
 
+.pic-mobile {
+  display: none;
+}
+
 .gallerywrap img {
   width: 100%;
-}
-
-.inline-link {
-  text-decoration: underline;
-  transition: color 0.3s;
-}
-
-.inline-link:hover, i:hover {
-  text-decoration: underline;
-  color: rgb(238,0,0);
 }
 
 /* GWDF Book Thing */
@@ -344,7 +398,7 @@ ul > li, ul > li:active {
 }
 
 .ghost-spacing {
-  margin: 7vh 15vw;
+  margin: auto;
 }
 
 .aspect {
@@ -354,7 +408,7 @@ ul > li, ul > li:active {
 }
 
 .aspect-spacing {
-  margin: 60px 300px 60px 390px;
+  margin: auto;
 }
 
 .edge {
@@ -364,7 +418,7 @@ ul > li, ul > li:active {
 }
 
 .edge-spacing {
-  margin: 60px 310px 60px 380px;
+  margin: auto;
 }
 
 .book-container .book:hover {
@@ -423,7 +477,8 @@ ul > li, ul > li:active {
 
 .website-display {
   border: none;
-  padding: 5vh 0;;
+  padding: 5vh 0;
+  overflow: hidden;
 }
 
 .zoom {
@@ -442,31 +497,20 @@ ul > li, ul > li:active {
   border: 3px rgba(0,0,0, 0.9);
 }
 
-button {
-  animation: all 0.3s;
-}
-
 .presentation-button {
   width: 25vw;
   color: rgba( 21, 62, 172, 1);
   background: rgba( 0,0,0, 0.1);
   border-width: 1px;
   border-color: rgba( 0,0,0, 0.2);
-  animation: all 0.3s;
+  margin: 0;
+  padding: 0;
 }
 
 .presentation-button:hover {
   color: rgb(238,0,0);
   background: rgba( 0,0,0, 0.15);
 }
-
-.presentation-button:active, .presentation-button:focus,
-.presentation-button:target, {
-  color: rgb(238,0,0);
-  border-color: rgb(238,0,0);
-  background: rgba( 0,0,0, 0.15);
-}
-
 
 
 /* FOOTER */
